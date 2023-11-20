@@ -1,0 +1,182 @@
+.nav-hero {
+    margin-bottom: 0 !important;
+
+    .hero {
+        .flex {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            padding-top: 1rem;
+
+            .img-div {
+                width: 50%;
+                padding-top: 1rem;
+                padding-right: 2rem;
+                .hero-main-img {
+                    width: 100%;
+                    height: 80vh;
+                    object-fit: cover;
+                    border-radius: 12px;
+                }
+            }
+
+            .info-div {
+                width: 50%;
+
+                .pill-info {
+                    background-color: $primary-soft;
+                    border-radius: 50rem;
+                    width: fit-content;
+                    padding: 0.4rem 1.5rem;
+                    margin-bottom: 2rem;
+
+                    img {
+                        margin-right: 0.3rem;
+                        width: 40px;
+                    }
+
+                    span {
+                        font-weight: 500;
+                        color: $primary;
+                        font-size: 16px;
+                    }
+                }
+
+                .first-heading {
+                    font-size: 48px;
+                    font-weight: 700;
+                    text-transform: capitalize;
+                    margin-bottom: 1rem;
+                    color: $dark;
+                }
+
+                .hero-info {
+                    font-size: 17px;
+                    color: $info;
+                    font-weight: 400;
+                    margin-bottom: 1rem;
+                }
+
+                .buttons {
+                    display: flex;
+                    gap: 2rem;
+                    margin-bottom: 2rem;
+                }
+
+                .ratings-spf{
+                    display: flex;
+                    gap: 1rem;
+
+                    .customers-overview {
+                        height: 5rem;
+                        display: flex;
+                        margin-bottom: 1rem;
+
+                        .profiles {
+                            position: relative;
+                            width: 200px;
+
+                            .profile {
+                                width: 4rem;
+                                height: 4rem;
+                                object-fit: cover;
+                                border-radius: 50%;
+                                top: 0;
+                                border: 4px solid $body-color;
+                            }
+    
+                            .profile-2 {
+                                position: absolute;
+                                left: 20%;
+                            }
+    
+                            .profile-3 {
+                                position: absolute;
+                                left: 40%;
+                            }
+                        }
+    
+                        .info-div {
+                            transform: translateX(-15%);
+    
+                            .stat {
+                                font-size: 20px;
+                                font-weight: 600;
+                                color: $dark;
+                            }
+    
+                            .stat-info {
+                                font-size: 16px;
+                                font-weight: 500;
+                                color: $info;
+                            }
+                        }
+                    }
+
+                    .star-ratings{
+                        .stat{
+                            font-size: 20px;
+                            font-weight: 600;
+                            color: $dark;
+                        }
+
+                        .stars{
+                            i{
+                                color: gold;
+
+                            }
+                        }
+                    }
+                }
+
+                .stats {
+                    display: flex;
+                    gap: 1rem;
+                    align-items: center;
+
+                    .column {
+                        text-align: center;
+                        padding: 0rem 2rem;
+                        position: relative;
+
+                        &:nth-of-type(1) {
+                            padding-left: 0rem;
+                        }
+
+                        &:nth-of-type(3) {
+                            &::after {
+                                width: 0px;
+                            }
+                        }
+
+                        &::after {
+                            position: absolute;
+                            content: "";
+                            height: 2rem;
+                            width: 3px;
+                            background-color: $primary-soft;
+                            right: 0;
+                            top: 50%;
+                            transform: translateY(-50%);
+                        }
+
+                        .number {
+                            font-size: 28px;
+                            font-weight: 700;
+                            color: rgb(66, 64, 64);
+
+                            span {
+                                color: $primary;
+                            }
+                        }
+
+                        .stat-info {
+                            font-size: 18px;
+                            color: rgb(66, 66, 66);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
