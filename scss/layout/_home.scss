@@ -1,5 +1,5 @@
 .nav-hero {
-    // margin-bottom: 0 !important;
+    margin-bottom: 0 !important;
 
     .hero {
         .flex {
@@ -16,7 +16,7 @@
                 .hero-main-img {
                     width: 100%;
                     height: 80vh;
-                    object-fit: cover;
+                    object-fit: contain;
                     border-radius: 12px;
                 }
             }
@@ -435,8 +435,7 @@
                 }
 
                 .spf-1 {
-                    background-color: $primary-soft;
-                    color: $primary;
+                    background-color: $primary;
                     border-radius: 50rem;
                     padding: 0.4rem 1rem;
                     font-size: 16px;
@@ -460,7 +459,7 @@
                 }
 
                 .pill-btn {
-                    background-color: $primary-soft;
+                    background-color: $white;
                     color: $primary;
                     font-weight: 500;
                     .icon-div {

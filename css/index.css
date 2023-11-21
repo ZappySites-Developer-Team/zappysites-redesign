@@ -13247,6 +13247,9 @@ nav .nav-link.active {
     transform: rotate(360deg);
   }
 }
+.nav-hero {
+  margin-bottom: 0 !important;
+}
 .nav-hero .hero .flex {
   display: flex;
   gap: 2rem;
@@ -13261,7 +13264,7 @@ nav .nav-link.active {
 .nav-hero .hero .flex .img-div .hero-main-img {
   width: 100%;
   height: 80vh;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 12px;
 }
 .nav-hero .hero .flex .info-div {
@@ -13594,8 +13597,7 @@ nav .nav-link.active {
   color: #1054f3;
 }
 .pricing-tables .flex .column:nth-of-type(2) .spf-1 {
-  background-color: #c6e1fc;
-  color: #1054f3;
+  background-color: #1054f3;
   border-radius: 50rem;
   padding: 0.4rem 1rem;
   font-size: 16px;
@@ -13611,7 +13613,7 @@ nav .nav-link.active {
   color: #f4f4f3;
 }
 .pricing-tables .flex .column:nth-of-type(2) .pill-btn {
-  background-color: #c6e1fc;
+  background-color: #f4f4f3;
   color: #1054f3;
   font-weight: 500;
 }
