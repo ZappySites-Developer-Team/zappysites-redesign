@@ -19,6 +19,7 @@
                     height: 81vh;
                     object-fit: contain;
                     border-radius: 12px;
+                    object-position: bottom;
                 }
 
                 .arrow {
@@ -27,6 +28,7 @@
                     top: 35%;
                     right: -15%;
                     filter: opacity(0.8);
+                    display: none;
                 }
 
                 .bolt {
@@ -118,7 +120,7 @@
                         }
 
                         .info-div {
-                            transform: translateX(-15%);
+                            transform: translateX(-6%);
 
                             .stat {
                                 font-size: 20px;

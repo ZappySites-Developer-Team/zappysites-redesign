@@ -13267,6 +13267,7 @@ nav .nav-link.active {
   height: 81vh;
   object-fit: contain;
   border-radius: 12px;
+  object-position: bottom;
 }
 .nav-hero .hero .flex .img-div .arrow {
   position: absolute;
@@ -13274,6 +13275,7 @@ nav .nav-link.active {
   top: 35%;
   right: -15%;
   filter: opacity(0.8);
+  display: none;
 }
 .nav-hero .hero .flex .img-div .bolt {
   position: absolute;
@@ -13352,7 +13354,7 @@ nav .nav-link.active {
   left: 40%;
 }
 .nav-hero .hero .flex .info-div .ratings-spf .customers-overview .info-div {
-  transform: translateX(-15%);
+  transform: translateX(-6%);
 }
 .nav-hero .hero .flex .info-div .ratings-spf .customers-overview .info-div .stat {
   font-size: 20px;
