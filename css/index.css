@@ -13263,12 +13263,13 @@ nav .nav-link.active {
 }
 .nav-hero .hero .flex .img-div .hero-main-img {
   width: 100%;
-  height: 80vh;
+  height: 82vh;
   object-fit: contain;
   border-radius: 12px;
 }
 .nav-hero .hero .flex .info-div {
   width: 50%;
+  padding-bottom: 3rem;
 }
 .nav-hero .hero .flex .info-div .pill-info {
   background-color: #c6e1fc;
@@ -13406,7 +13407,7 @@ nav .nav-link.active {
   padding: 4rem 0;
 }
 .marquee-section .marquee {
-  --duration: 15s;
+  --duration: 65s;
   --gap: var(--space);
   background-color: #1054f3;
   display: flex;

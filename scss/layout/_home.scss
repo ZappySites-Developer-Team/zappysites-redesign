@@ -15,7 +15,7 @@
 
                 .hero-main-img {
                     width: 100%;
-                    height: 80vh;
+                    height: 82vh;
                     object-fit: contain;
                     border-radius: 12px;
                 }
@@ -23,6 +23,7 @@
 
             .info-div {
                 width: 50%;
+                padding-bottom: 3rem;
 
                 .pill-info {
                     background-color: $primary-soft;
@@ -198,7 +199,7 @@
     padding: 4rem 0;
 
     .marquee {
-        --duration: 15s;
+        --duration: 65s;
         --gap: var(--space);
         background-color: $primary;
         display: flex;
