@@ -13584,26 +13584,42 @@ nav .nav-link.active {
   border: 1px solid #a1a1a1;
 }
 .pricing-tables .flex .column:nth-of-type(2) {
-  background-color: #212529;
+  background: linear-gradient(to top, #123ea6, #1241b0, #1144b9, #1247c3, #124acd);
   color: #f4f4f3;
 }
 .pricing-tables .flex .column:nth-of-type(2) .top-icon-div {
-  background-color: #1054f3;
+  background-color: #c6e1fc;
+}
+.pricing-tables .flex .column:nth-of-type(2) .top-icon-div i {
+  color: #1054f3;
 }
 .pricing-tables .flex .column:nth-of-type(2) .spf-1 {
-  background-color: #1054f3;
+  background-color: #c6e1fc;
+  color: #1054f3;
   border-radius: 50rem;
   padding: 0.4rem 1rem;
   font-size: 16px;
+  font-weight: 500;
 }
 .pricing-tables .flex .column:nth-of-type(2) .spf-1 img {
   width: 18px;
 }
 .pricing-tables .flex .column:nth-of-type(2) .sub-data {
-  color: #cecccc;
+  color: #c6e1fc;
 }
 .pricing-tables .flex .column:nth-of-type(2) .features ul li {
   color: #f4f4f3;
+}
+.pricing-tables .flex .column:nth-of-type(2) .pill-btn {
+  background-color: #c6e1fc;
+  color: #1054f3;
+  font-weight: 500;
+}
+.pricing-tables .flex .column:nth-of-type(2) .pill-btn .icon-div {
+  background-color: #1054f3;
+}
+.pricing-tables .flex .column:nth-of-type(2) .pill-btn .icon-div i {
+  color: #c6e1fc;
 }
 .pricing-tables .flex .column .top-icon-div {
   width: 2.5rem;
@@ -13670,7 +13686,7 @@ nav .nav-link.active {
 }
 .pricing-tables .flex .column .features ul li .icon i {
   font-size: 16px;
-  color: #47c89b;
+  color: #3bab84;
 }
 .pricing-tables .flex .column .features .no-before::before {
   background-color: none !important;

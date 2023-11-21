@@ -423,18 +423,24 @@
             border: 1px solid $light-info;
 
             &:nth-of-type(2) {
-                background-color: $dark;
+                background: linear-gradient(to top, #123ea6, #1241b0, #1144b9, #1247c3, #124acd);
                 color: $white;
 
                 .top-icon-div {
-                    background-color: $primary;
+                    background-color: $primary-soft;
+
+                    i {
+                        color: $primary;
+                    }
                 }
 
                 .spf-1 {
-                    background-color: $primary;
+                    background-color: $primary-soft;
+                    color: $primary;
                     border-radius: 50rem;
                     padding: 0.4rem 1rem;
                     font-size: 16px;
+                    font-weight: 500;
 
                     img {
                         width: 18px;
@@ -442,13 +448,26 @@
                 }
 
                 .sub-data {
-                    color: #cecccc;
+                    color: $primary-soft;
                 }
 
                 .features {
                     ul {
                         li {
                             color: $white;
+                        }
+                    }
+                }
+
+                .pill-btn {
+                    background-color: $primary-soft;
+                    color: $primary;
+                    font-weight: 500;
+                    .icon-div {
+                        background-color: $primary;
+
+                        i {
+                            color: $primary-soft;
                         }
                     }
                 }
@@ -527,7 +546,7 @@
 
                             i {
                                 font-size: 16px;
-                                color: $secondary;
+                                color: #3bab84;
                             }
                         }
                     }
