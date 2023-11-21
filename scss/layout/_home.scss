@@ -12,6 +12,24 @@
                 width: 50%;
                 padding-top: 1rem;
                 padding-right: 2rem;
+                position: relative;
+
+                .arrow{
+                    position: absolute;
+                    width: 8rem;
+                    top: 41%;
+                    right: 3%;
+                    filter:opacity(0.8);
+                }
+
+                .bolt{
+                    position: absolute;
+                    width: 5rem;
+                    top: 10%;
+                    left: 3%;
+                    transform: rotate(-40deg);
+                    filter:opacity(0.8);
+                }
 
                 .hero-main-img {
                     width: 100%;

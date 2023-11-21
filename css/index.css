@@ -13260,6 +13260,22 @@ nav .nav-link.active {
   width: 50%;
   padding-top: 1rem;
   padding-right: 2rem;
+  position: relative;
+}
+.nav-hero .hero .flex .img-div .arrow {
+  position: absolute;
+  width: 8rem;
+  top: 41%;
+  right: 3%;
+  filter: opacity(0.8);
+}
+.nav-hero .hero .flex .img-div .bolt {
+  position: absolute;
+  width: 5rem;
+  top: 10%;
+  left: 3%;
+  transform: rotate(-40deg);
+  filter: opacity(0.8);
 }
 .nav-hero .hero .flex .img-div .hero-main-img {
   width: 100%;
