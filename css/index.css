@@ -13581,6 +13581,7 @@ nav .nav-link.active {
 .pricing-tables .flex .column {
   padding: 2.5rem 1.5rem;
   border-radius: 12px;
+  border: 1px solid #a1a1a1;
 }
 .pricing-tables .flex .column:nth-of-type(2) {
   background-color: #212529;
