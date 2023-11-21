@@ -13252,21 +13252,27 @@ nav .nav-link.active {
 }
 .nav-hero .hero .flex {
   display: flex;
-  gap: 2rem;
+  gap: 5rem;
   align-items: center;
   padding-top: 1rem;
 }
 .nav-hero .hero .flex .img-div {
-  width: 50%;
+  width: 25%;
   padding-top: 1rem;
   padding-right: 2rem;
   position: relative;
 }
+.nav-hero .hero .flex .img-div .hero-main-img {
+  width: 100%;
+  height: 81vh;
+  object-fit: contain;
+  border-radius: 12px;
+}
 .nav-hero .hero .flex .img-div .arrow {
   position: absolute;
-  width: 8rem;
-  top: 41%;
-  right: 3%;
+  width: 7rem;
+  top: 35%;
+  right: -15%;
   filter: opacity(0.8);
 }
 .nav-hero .hero .flex .img-div .bolt {
@@ -13276,15 +13282,10 @@ nav .nav-link.active {
   left: 3%;
   transform: rotate(-40deg);
   filter: opacity(0.8);
-}
-.nav-hero .hero .flex .img-div .hero-main-img {
-  width: 100%;
-  height: 82vh;
-  object-fit: contain;
-  border-radius: 12px;
+  display: none;
 }
 .nav-hero .hero .flex .info-div {
-  width: 50%;
+  width: 75%;
   padding-bottom: 3rem;
 }
 .nav-hero .hero .flex .info-div .pill-info {
