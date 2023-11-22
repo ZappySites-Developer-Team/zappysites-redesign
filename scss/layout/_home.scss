@@ -142,13 +142,6 @@
                             font-weight: 600;
                             color: $dark;
                         }
-
-                        .stars {
-                            i {
-                                color: gold;
-
-                            }
-                        }
                     }
                 }
 
@@ -209,7 +202,7 @@
 // Logos Margue
 .marquee-section {
     --space: 2rem;
-    background-color: $primary;
+    background: $primary-gradient;
     display: grid;
     align-content: center;
     overflow: hidden;
@@ -222,7 +215,6 @@
     .marquee {
         --duration: 65s;
         --gap: var(--space);
-        background-color: $primary;
         display: flex;
         overflow: hidden;
         user-select: none;
@@ -230,7 +222,6 @@
 
         .marquee_group {
             flex-shrink: 0;
-            background-color: $primary;
             display: flex;
             align-items: center;
             justify-content: space-around;
@@ -254,6 +245,171 @@
                 object-fit: contain;
                 filter: saturate(0%);
                 z-index: 2;
+            }
+        }
+    }
+}
+
+
+// Testimonials
+.testimonials {
+    .testimonial {
+        .flex {
+            display: flex;
+            justify-content: space-between;
+            align-self: center;
+            gap: 3rem;
+        }
+
+        .img-div {
+            width: 25%;
+
+            img {
+                width: 100%;
+                object-fit: cover;
+                height: 21rem;
+                border-radius: 6px;
+                border-bottom-left-radius: 5rem;
+            }
+        }
+
+        .data-div {
+            width: 75%;
+            margin: auto 0;
+
+            .quote {
+                margin-bottom: 1rem;
+            }
+
+            .stars {
+                margin-bottom: 1rem;
+
+                i {
+                    font-size: 18px;
+                }
+            }
+
+            .info {
+                font-size: 1.45rem;
+            }
+
+            .flex {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 1rem;
+
+                .name {
+                    font-size: 1.3rem;
+                    font-weight: 600;
+                    color: $primary;
+                }
+
+                .position {
+                    font-size: 1rem;
+                    font-weight: 400;
+
+                }
+
+                .logo {
+                    img {
+                        width: 16rem;
+                        height: 80px;
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// About Us
+.about-us {
+    background: $primary-gradient;
+    padding: 3rem 0;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('/img/texture-1.png');
+        opacity: 0.15;
+        z-index: 0;
+    }
+
+    .flex {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        position: relative;
+        z-index: 2;
+
+        .info-div {
+            width: 60%;
+
+            .header {
+                font-size: 48px;
+                font-weight: 700;
+                text-transform: capitalize;
+                margin-bottom: 1rem;
+                color: $white;
+            }
+
+            .info {
+                font-size: 17px;
+                color: $primary-soft;
+                font-weight: 400;
+                margin-bottom: 1rem;
+            }
+
+            .button {
+                margin-top: 2rem;
+
+                .pill-btn {
+                    background-color: $white;
+                    color: $primary;
+
+                    span {
+                        font-weight: 500;
+                    }
+
+                    .icon-div {
+                        background-color: $primary;
+
+                        i {
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+
+        .img-div {
+            width: 40%;
+            display: flex;
+            justify-content: center;
+            border-radius: 12px;
+            position: relative;
+
+            .blob {
+                position: absolute;
+                width: 73%;
+                top: 15%;
+                right: 5%;
+                z-index: 0;
+                transform: rotate(90deg);
+            }
+
+            .main-img {
+                max-height: 500px;
+                width: 100%;
+                object-fit: contain;
+                z-index: 1;
             }
         }
     }
@@ -320,115 +476,214 @@
     }
 }
 
-// About Us
-.about-us {
+// Point About Us
+.point-about-us {
+    background: $primary-gradient;
+    padding: 4rem 0;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('/img/texture-1.png');
+        opacity: 0.1;
+        z-index: 0;
+    }
+    // .texture{
+    //     position: absolute;
+    //     z-index: 0;
+    //     width: 100%;
+    //     height: 100%;
+    //     top: 0;
+    //     left: 0;
+    //     opacity: 0.6;
+    //     z-index: -1;
+    // }
+
     .flex {
         display: flex;
         align-items: center;
-        gap: 2rem;
+        gap: 3rem;
+        z-index: 2;
+        position: relative;
 
-        .info-div {
-            width: 60%;
+        .heading-side {
+            width: 50%;
 
-            .heading {
-                font-size: 48px;
-                font-weight: 700;
-                text-transform: capitalize;
-                margin-bottom: 1rem;
-                color: $dark;
+            .header {
+                color: $white;
             }
 
             .info {
                 font-size: 17px;
-                color: $info;
+                color: $white;
                 font-weight: 400;
                 margin-bottom: 1rem;
             }
 
-            .button {
-                margin-top: 2rem;
-            }
-        }
-
-        .img-div {
-            width: 40%;
-            display: flex;
-            justify-content: center;
-            border-radius: 12px;
-
-            img {
-                max-height: 450px;
-                width: 100%;
-                object-fit: contain;
-            }
-        }
-    }
-}
-
-// Testimonials
-.testimonials {
-    .testimonial {
-        .flex {
-            display: flex;
-            justify-content: space-between;
-            align-self: center;
-            gap: 3rem;
-        }
-
-        .img-div {
-            width: 25%;
-
-            img {
+            .main-img {
                 width: 100%;
                 object-fit: cover;
-                height: 21rem;
-                border-radius: 6px;
-                border-bottom-left-radius: 5rem;
+                max-height: 350px;
+                border-radius: 12px;
             }
         }
 
-        .data-div {
-            width: 75%;
-            margin: auto 0;
-
-            .quote {
-                margin-bottom: 1rem;
-            }
-
-            .info {
-                font-size: 1.45rem;
-            }
-
-            .flex {
+        .points-side {
+            .point {
                 display: flex;
-                justify-content: space-between;
-                align-items: center;
-                margin-top: 1rem;
+                gap: 1.5rem;
+                margin-bottom: 2rem;
 
-                .name {
-                    font-size: 1.3rem;
-                    font-weight: 600;
-                    color: $primary;
+                h5,
+                p {
+                    color: $white;
                 }
 
-                .position {
-                    font-size: 1rem;
-                    font-weight: 400;
+                .icon {
+                    background-color: $white;
+                    width: 3rem;
+                    height: 3rem;
+                    min-width: 3rem;
+                    min-height: 3rem;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
 
-                }
-
-                .logo {
-                    img {
-                        width: 16rem;
-                        height: 80px;
-                        object-fit: contain;
+                    i {
+                        font-size: 18px;
+                        color: $primary;
                     }
                 }
+
+                .info {
+                    h5 {
+                        font-size: 19px;
+                        font-weight: 600;
+                    }
+                }
+
+                .pill-btn {
+                    background-color: $white;
+                    color: $primary;
+
+                    span {
+                        font-weight: 500;
+                    }
+
+                    .icon-div {
+                        background-color: $primary;
+
+                        i {
+                            color: $white;
+                        }
+                    }
+
+                }
+            }
+
+            .pill-btn {
+                background-color: $white;
+                color: $primary;
+
+                span {
+                    font-weight: 500;
+                }
+
+                .icon-div-small {
+                    background-color: $primary;
+
+                    i {
+                        color: $white;
+                    }
+                }
+
             }
         }
     }
 }
 
+// What we do
+.what-we-do {
+    .flex {
+        display: flex;
+        gap: 2rem;
+
+        .heading-side {
+            width: 50%;
+        }
+
+        .items {
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+            gap: 2rem;
+        }
+    }
+
+    .items-grid{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+        margin-top: 2rem
+    }
+
+    .item {
+        padding: 1rem 1.4rem;
+        border-radius: 12px;
+        border: 1px solid $primary-soft;
+        .logo-div {
+            width: 3.5rem;
+            height: 3.5rem;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $primary-soft;
+            margin-bottom: 1.5rem;
+
+            i {
+                color: $primary;
+            }
+        }
+
+        .title {
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        .info {
+            font-size: 16px;
+            margin-bottom: 1rem;
+        }
+
+        .pill-btn {
+            margin-top: 1rem;
+
+            .icon-div-small {
+                width: 2rem;
+                height: 2rem;
+                min-width: 2rem;
+                min-height: 2rem;
+
+                i{
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .link{
+            color: $primary;
+            margin-top: 2rem;
+            text-decoration: underline !important;
+        }
+    }
+}
 
 // Pricing Tables
 .pricing-tables {
@@ -597,6 +852,92 @@
     }
 }
 
+
+// Projects Showcase
+.projects-showcase {
+    background: $primary-gradient;
+    padding: 3rem 0;
+    color: $white;
+
+    .arrow-icon {
+        width: 8rem;
+        position: absolute;
+        left: 14%;
+        -webkit-filter: invert(100%); 
+        filter: invert(100%)
+    }
+
+    .globe-icon {
+        width: 5rem;
+        position: absolute;
+        top: 5%;
+        right: 10%;
+        -webkit-filter: invert(100%); 
+        filter: invert(100%)
+    }
+
+    .pencil-icon {
+        width: 7rem;
+        position: absolute;
+        bottom: 30%;
+        left: 10%;
+        transform: rotate(20deg);
+        -webkit-filter: invert(100%); 
+        filter: invert(100%)
+    }
+
+    .bolt-icon {
+        width: 5rem;
+        position: absolute;
+        bottom: 30%;
+        right: 10%;
+        -webkit-filter: invert(100%); 
+        filter: invert(100%)
+    }
+
+    .laptop-img-div {
+        display: flex;
+        justify-content: center;
+
+        .laptop-blank {
+            position: absolute;
+            margin: 0 auto;
+        }
+    }
+
+    .projects-slider {
+        padding-bottom: 5rem;
+
+        .project {
+            .img-div {
+                display: flex;
+                justify-content: center;
+
+                .laptop-screenshot {
+                    height: 527px;
+                    margin: 0 auto;
+                    padding-top: 1.1rem;
+                    padding-bottom: 2.5rem;
+                    width: 725px;
+                }
+            }
+        }
+
+        .right-arrow {
+            top: inherit !important;
+            bottom: 0;
+            right: 46%;
+        }
+
+        .left-arrow {
+            top: inherit !important;
+            bottom: 0;
+            left: 46%;
+        }
+    }
+}
+
+
 // Join Us
 .join-us {
     color: $dark;
@@ -649,10 +990,122 @@
     }
 }
 
+// FAQ
+.faq {
+    background-color: rgb(250, 250, 250);
+    padding: 2rem 0;
+
+    .accordion {
+        --bs-accordion-border-width: 0px;
+        --bs-accordion-btn-focus-border-color: #ffffff;
+        --bs-accordion-active-color: #ffffff;
+        --bs-accordion-btn-focus-box-shadow: 0 0 0 0rem;
+    }
+
+    .accordion-item {
+        margin-bottom: 1rem;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: rgba(233, 232, 232, 0.2) 0px 2px 8px 0px;
+        background-color: #ffffff;
+    }
+
+    .accordion-button:not(.collapsed)::after {
+        background-image: url("data:image/svg+xml,...");
+    }
+
+    .accordion-button::after {
+        background-image: url("data:image/svg+xml,...");
+    }
+
+    .accordion-button:not(.collapsed):after {
+        transform: none !important;
+        transform: all 0.3s;
+    }
+
+    .accordion-topic button {
+        padding: 20px 30px;
+        background-color: #fff;
+    }
+
+    .accordion-topic button:after {
+        font-family: "FontAwesome";
+        content: "\f068";
+        float: right;
+        color: $primary;
+        font-size: 1rem;
+        height: inherit;
+    }
+
+    .accordion-topic button.collapsed:after {
+        content: "\f0dd";
+        // content: "\2b";
+        font-size: 1.3rem;
+    }
+
+    .accordion-topic span {
+        font-weight: 600;
+        font-size: 19px;
+        line-height: 24px;
+        color: #293241;
+    }
+
+    .accordion-body {
+        padding-left: 2rem;
+    }
+
+    .accordion-button {
+        background-color: #ffffff !important;
+    }
+}
+
+// Footer
+footer{
+    .flex{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: space-between;
+        gap: 3rem;
+
+        .column{
+            .img-div{
+                width: 15rem;
+                margin-bottom: 2rem;
+
+                img{
+                    width: 100%;
+                }
+            }
+
+            .info{
+                color: $info;
+            }
+
+            .footer-head{
+                font-size: 22px;
+                font-weight: 600;
+                margin-bottom: 1rem;
+            }
+
+            .footer-link{
+                display: block;
+                font-weight: 400;
+                margin-bottom: 0.5rem;
+                color: $info;
+
+                i{
+                    font-size: 20px;
+                    margin-right: 0.7rem;
+                }
+            }
+        }
+    }
+}
+
 // Stars
 .stars {
     i {
-        color: gold;
+        color: #FDCC0D;
 
     }
 }

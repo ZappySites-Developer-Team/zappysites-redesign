@@ -630,6 +630,18 @@ $('.testimonials-slider').slick({
   nextArrow: null,
 });
 
+$('.projects-slider').slick({
+  dots: false,
+  autoplay: false,
+  infinite: true,
+  loop: true,
+  speed: 600,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  prevArrow: '<i class="fa-solid fa-chevron-left left-arrow"></i>',
+  nextArrow: '<i class="fa-solid fa-chevron-right right-arrow"></i>',
+});
+
 const videoSection = document.querySelector(".video-section");
 const videoDiv = document.querySelector(".video-div");
 const video = videoDiv.querySelector(".video");

@@ -3,7 +3,7 @@
 $primary: #1054f3;
 $secondary: #47c89b;
 $warning: #4C4637;
-$success: #a2daf0;
+$success: #c6e1fc;;
 $danger: #005B50;
 $black: #302c2c;
 $white: #f4f4f3;
@@ -11,7 +11,7 @@ $creamWhite: #f7f2ed;
 $info: #5c5d5e;
 $light-info: #a1a1a1;
 $body-color: #ffffff;
-
+$primary-gradient: linear-gradient(to top, #123ea6, #1241b0, #1144b9, #1247c3, #124acd);
 $primary-soft: #c6e1fc;
 $secondary-soft: #c2f9e5;
 
@@ -233,7 +233,7 @@ section {
 }
 
 .header {
-    font-size: 33px;
+    font-size: 36px;
     font-weight: 600;
     position: relative;
     text-transform: capitalize;
