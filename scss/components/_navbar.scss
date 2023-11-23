@@ -1,6 +1,7 @@
 nav {
   background-color: #f6f9fc;
   z-index: 2;
+  padding: 1.1rem 0 !important;
 
   .navbar-brand {
     max-width: calc(100% - 18rem);
@@ -15,8 +16,6 @@ nav {
       object-fit: contain;
     }
   }
-
-
 
   .nav-link {
     color: $info;

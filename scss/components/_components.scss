@@ -26,10 +26,6 @@
     span {
         font-size: 18px;
         font-weight: 400;
-
-        @media (max-width: 576px) {
-            display: none;
-        }
     }
 
     .icon-div {
@@ -101,9 +97,6 @@
         font-size: 18px;
         font-weight: 500;
         color: $primary;
-        @media (max-width: 576px) {
-            display: none;
-        }
     }
 
     .icon-div {
@@ -136,6 +129,79 @@
     }
 
 
+}
+
+.pill-btn-transparent {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    background-color: transparent;
+    border-radius: 50rem;
+    padding: 0.3rem;
+    padding-right: 1.5rem;
+    background-color: transparent;
+    border: 2px solid $primary-soft;
+    span {
+        font-size: 18px;
+        font-weight: 500;
+        color: $white;
+    }
+
+    .icon-div {
+        background-color: $primary-soft;
+        border-radius: 50%;
+        min-width: 3.7rem;
+        min-height: 3.7rem;
+        width: 3.7rem;
+        height: 3.7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;;
+
+        i {
+            font-size: 20px;
+            color: $primary;
+        }
+    }
+
+    .icon-div-small {
+        background-color: #E6F1FF;
+        border-radius: 50%;
+        min-width: 3rem;
+        min-height: 3rem;
+        width: 3rem;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgb(36, 161, 211);
+
+        i {
+            font-size: 20px;
+            color: $primary;
+        }
+    }
+
+
+    @media (max-width: 450px) {
+        width: fit-content;
+    }
+
+    &:hover {
+        .icon-div {
+            i {
+                transform: translateX(15%)
+            }
+        }
+    }
+
+
+}
+
+.buttons-flex{
+    display: flex;
+    gap: 1.4rem;
+    flex-wrap: wrap;
 }
 
 .loading-spinner {

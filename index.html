@@ -25,15 +25,15 @@
 <body>
     <section class="nav-hero">
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-xl">
             <div class="container">
                 <!-- Navbar Logo -->
                 <a class="navbar-brand" href="#"><img src="/img/logo.png" alt="Company Logo"></a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler border-none" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <i class="fa-solid fa-bars-staggered"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-3">
@@ -50,21 +50,23 @@
                             <a class="nav-link" href="#">Reviews</a>
                         </li>
                     </ul>
-                </div>
-                <div class="d-flex align-items-center">
-                    <p class="fs-19 fw-500 me-3">Sales Call</p>
-                    <a class="pill-btn " href="tel:+18328106247">
-                        <div class="icon-div">
-                            <i class="fa-solid fa-phone-volume"></i>
-                        </div>
-                        <span>(832) 810-6247</span>
-                    </a>
+
+                    <div class="d-flex align-items-center">
+                        <p class="fs-19 fw-500 me-3">Sales Call</p>
+                        <a class="pill-btn " href="tel:+18328106247">
+                            <div class="icon-div">
+                                <i class="fa-solid fa-phone-volume"></i>
+                            </div>
+                            <span>(832) 810-6247</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </nav>
 
         <!-- Hero Section -->
         <div class="hero">
+            <img class="hero-bg" src="/img/hero-bg.jpg" alt="Hero BG">
             <div class="container">
                 <div class="flex">
                     <div class="img-div">
@@ -76,7 +78,7 @@
                     <div class="info-div">
                         <div class="pill-info">
                             <img src="/img/rocket-icon.png" alt="Rocket Icon">
-                            <span>Enhance Your Business</span>
+                            <span>Grow Your Business</span>
                         </div>
                         <h1 class="first-heading">
                             We build websites that help you grow your business <span class="text-primary">.</span>
@@ -86,7 +88,7 @@
                             businesses.
                         </p>
 
-                        <div class="buttons">
+                        <div class="buttons buttons-flex">
                             <div>
                                 <a class="pill-btn " href="tel:+18328106247">
                                     <div class="icon-div">
@@ -219,7 +221,7 @@
                                 Leapfrog. They’re built for startup speed, and they have consistently delivered a
                                 well-engineered product for us.
                             </p>
-                            <div class="flex">
+                            <div class="logo-flex">
                                 <div>
                                     <p class="name">Ross Jenkins</p>
                                     <p class="position">Owner of Lorem</p>
@@ -252,7 +254,7 @@
                                 Leapfrog. They’re built for startup speed, and they have consistently delivered a
                                 well-engineered product for us.
                             </p>
-                            <div class="flex">
+                            <div class="logo-flex">
                                 <div>
                                     <p class="name">Ross Jenkins</p>
                                     <p class="position">Owner of Lorem</p>
@@ -283,19 +285,28 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     </p>
 
-                    <div class="button">
-                        <a class="pill-btn " href="tel:+18328106247">
-                            <div class="icon-div">
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </div>
-                            <span>Start Now</span>
-                        </a>
+                    <div class="mt-5 buttons-flex">
+                        <div class="button">
+                            <a class="pill-btn " href="tel:+18328106247">
+                                <div class="icon-div">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </div>
+                                <span>Start Now</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a class="pill-btn-transparent" href="tel:+18328106247">
+                                <div class="icon-div">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <span>How It Works </span>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
                 <div class="img-div">
-                    <img class="blob" src="/img/blob.svg" alt="Blob">
-                    <img class="main-img" src="/img/laptop-mockup-1.png" alt="Laptop Mockup">
+                    <img class="main-img" src="/img/laptop-phone-mockup.png" alt="Laptop Mockup">
                 </div>
             </div>
         </div>
@@ -307,7 +318,7 @@
             <h3 class="header text-center mb-3">
                 <span>How</span> It Works
             </h3>
-            <p class="text-center mx-auto text-info col-7 mb-4">
+            <p class="text-center mx-auto text-info col-md-7 mb-4">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit
                 amet consectetur adipisicing elit. Quisquam, voluptatum.
             </p>
@@ -364,7 +375,14 @@
                         We are a US based web design company that specializes in building websites for small
                     </p>
 
-                    <img class="main-img" src="/img/hero-test-2.png" alt="Point Based About Us Img">
+                    <!-- <img class="main-img" src="/img/hero-test-2.png" alt="Point Based About Us Img"> -->
+
+                    <video controls
+                    poster="/img/image1.jpg"
+                    >
+                        <source src="/img/zappysites2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
 
                 <!-- Right Side -->
@@ -423,12 +441,24 @@
                         </div>
                     </div>
 
-                    <a class="pill-btn " href="tel:+18328106247">
-                        <div class="icon-div-small">
-                            <i class="fa-solid fa-arrow-right"></i>
+                    <div class="buttons-flex">
+                        <div>
+                            <a class="pill-btn " href="tel:+18328106247">
+                                <div class="icon-div-small">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </div>
+                                <span>Start Now</span>
+                            </a>
                         </div>
-                        <span>Start Now</span>
-                    </a>
+                        <div>
+                            <a class="pill-btn-transparent" href="tel:+18328106247">
+                                <div class="icon-div-small">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <span>How It Works </span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -448,12 +478,24 @@
                         based web design company that specializes in building websites for small
                     </p>
 
-                    <a class="pill-btn mt-4" href="tel:+18328106247">
-                        <div class="icon-div-small">
-                            <i class="fa-solid fa-arrow-right"></i>
+                    <div class="buttons-flex mt-4">
+                        <div>
+                            <a class="pill-btn" href="tel:+18328106247">
+                                <div class="icon-div-small">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </div>
+                                <span>Start Now</span>
+                            </a>
                         </div>
-                        <span>Start Now</span>
-                    </a>
+                        <div>
+                            <a class="pill-btn-transparent border-primary" href="tel:+18328106247">
+                                <div class="icon-div-small bg-primary">
+                                    <i class="fa-solid fa-play text-white"></i>
+                                </div>
+                                <span class="text-primary">How It Works </span>
+                            </a>
+                        </div>
+                    </div>
 
                 </div>
 
@@ -707,10 +749,10 @@
             <p class="sub-header-small text-center text-white">Projects Showcase</p>
             <h3 class="header text-center mb-5 text-white">Powerful Websites Built for You by Experts.</h3>
 
-            <img class="arrow-icon" src="/img/arrow-scribbles.png" alt="Arrow Scribbles">
-            <img class="bolt-icon" src="/img/bolt-scribble.png" alt="Bolt Scribble">
-            <img class="globe-icon" src="/img/globe-scribble.png" alt="Globe Scribble">
-            <img class="pencil-icon" src="/img/pencil-scribble.png" alt="Pencil Scribble">
+            <img class="aim-icon" src="/img/aim-scribble.png" alt="Aim Scribbles">
+            <img class="mail-icon" src="/img/mail-scribble.png" alt="Mail Scribble">
+            <img class="rocket-icon" src="/img/rocket-scribble.png" alt="Rocket Scribble">
+            <img class="magnet-icon" src="/img/magnet-scribble.png" alt="Magnet Scribble">
 
             <div class="position-relative">
                 <div class="laptop-img-div">
@@ -736,7 +778,7 @@
                     </div>
                 </div>
 
-                <p class="text-white text-center col-6 mx-auto mt-4">
+                <p class="text-white text-center col-md-6 mx-auto mt-4">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit
                     amet consectetur.
                 </p>
@@ -780,7 +822,7 @@
                         </p>
 
                         <p class="text-info fw-500 mb-2 fs-17">
-                            Trusted by more than <span class="fw-500 text-dark">100+ Businesses</span>
+                            Trusted by more than <span class="fw-600 text-dark">100+ Businesses</span>
                         </p>
 
                         <div>
@@ -914,11 +956,11 @@
 
     <footer>
         <div class="container">
-            <div class="flex">
+            <div class="d-flex flex">
 
-                <div class="column">
+                <div class="column col-xl-4 col-sm-4 col-12">
                     <div class="img-div">
-                        <img class="logo" src="/img/logo.png" alt="Company Logo">
+                        <img class="logo" src="/img/footer-logo.png" alt="Company Logo">
                     </div>
                     <p class="info">
                         Our expert team specializes in developing powerful, user-friendly, and Google optimized websites
@@ -926,7 +968,7 @@
                     </p>
                 </div>
 
-                <div class="column">
+                <div class="column col-xl col-md-3 col-sm-4 col-12">
                     <h6 class="footer-head">Company</h6>
                     <a class="footer-link" href="">Our Company</a>
                     <a class="footer-link" href="">Our Company</a>
@@ -934,7 +976,7 @@
                     <a class="footer-link" href="">Our Company</a>
                 </div>
 
-                <div class="column">
+                <div class="column col-xl col-md-3 col-sm-4 col-12">
                     <h6 class="footer-head">Services</h6>
                     <a class="footer-link" href="">Our Company</a>
                     <a class="footer-link" href="">Our Company</a>
@@ -942,7 +984,7 @@
                     <a class="footer-link" href="">Our Company</a>
                 </div>
 
-                <div class="column">
+                <div class="column col-xl-col-md-4 col-sm-4 col-12">
                     <h6 class="footer-head">Contact Us</h6>
                     <a class="footer-link" href="tel:+18328106247">
                         <i class="fa-solid fa-phone"></i>
@@ -954,6 +996,9 @@
                     </a>
                 </div>
             </div>
+            <p class="text-center text-white mt-5 fs-18">
+                &copy; 2023 ZappySites, LLC. All Rights Reserved.
+            </p>
         </div>
     </footer>
 
