@@ -13523,7 +13523,7 @@ nav .nav-link.active {
   left: 40%;
 }
 .nav-hero .hero .flex .info-div .ratings-spf .customers-overview .info-div {
-  transform: translateX(-6%);
+  transform: translateX(-22%);
 }
 @media (max-width: 576px) {
   .nav-hero .hero .flex .info-div .ratings-spf .customers-overview .info-div {
