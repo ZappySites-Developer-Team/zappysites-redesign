@@ -13376,7 +13376,7 @@ nav .nav-link.active {
   width: 100%;
   height: 100%;
   background-image: url("/img/texture-2.png");
-  opacity: 0.12;
+  opacity: 0.1;
   z-index: -1;
 }
 @media (max-width: 1200px) {
@@ -13397,22 +13397,7 @@ nav .nav-link.active {
     top: 0;
     left: 0;
     z-index: -1;
-    background-color: rgba(221, 229, 247, 0.85);
-  }
-}
-.nav-hero .hero .hero-bg {
-  display: none;
-}
-@media (max-width: 1200px) {
-  .nav-hero .hero .hero-bg {
-    display: block;
-    position: absolute;
-    z-index: -2;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    object-fit: cover;
+    background-color: #ffffff;
   }
 }
 .nav-hero .hero .flex {
@@ -13497,8 +13482,8 @@ nav .nav-link.active {
   }
 }
 .nav-hero .hero .flex .info-div .hero-info {
-  font-size: 17px;
-  color: #5c5d5e;
+  font-size: 18px;
+  color: #444546;
   font-weight: 400;
   margin-bottom: 1rem;
 }
