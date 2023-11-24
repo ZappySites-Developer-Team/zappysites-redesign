@@ -635,6 +635,7 @@ $('.projects-slider').slick({
   autoplay: false,
   infinite: true,
   loop: true,
+  fade: true,
   speed: 600,
   slidesToShow: 1,
   slidesToScroll: 1,
