@@ -1123,6 +1123,7 @@
         left: 10%;
         -webkit-filter: invert(100%);
         filter: invert(100%);
+        opacity: (0.3);
 
         @media (max-width: 1200px) {
             display: none;
@@ -1136,6 +1137,7 @@
         right: 10%;
         -webkit-filter: invert(100%);
         filter: invert(100%);
+ opacity: (0.3);
 
         @media (max-width: 1200px) {
             display: none;
@@ -1150,7 +1152,7 @@
         transform: rotate(20deg);
         -webkit-filter: invert(100%);
         filter: invert(100%);
-
+        opacity: (0.3);
         @media (max-width: 1300px) {
             left: 2%;
         }
@@ -1167,6 +1169,7 @@
         right: 6%;
         -webkit-filter: invert(100%);
         filter: invert(100%);
+        opacity: (0.3);
 
         @media (max-width: 1300px) {
             right: 1%;

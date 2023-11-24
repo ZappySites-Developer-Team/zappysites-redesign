@@ -121,7 +121,7 @@
     }
 
     &:hover {
-        .icon-div {
+        .icon-div, .icon-div-small  {
             i {
                 transform: translateX(15%)
             }
@@ -188,7 +188,7 @@
     }
 
     &:hover {
-        .icon-div {
+        .icon-div-small, .icon-div {
             i {
                 transform: translateX(15%)
             }

@@ -13233,7 +13233,7 @@ nav .nav-link.active {
     width: fit-content;
   }
 }
-.pill-btn-opposite:hover .icon-div i {
+.pill-btn-opposite:hover .icon-div i, .pill-btn-opposite:hover .icon-div-small i {
   transform: translateX(15%);
 }
 
@@ -13289,7 +13289,7 @@ nav .nav-link.active {
     width: fit-content;
   }
 }
-.pill-btn-transparent:hover .icon-div i {
+.pill-btn-transparent:hover .icon-div-small i, .pill-btn-transparent:hover .icon-div i {
   transform: translateX(15%);
 }
 
@@ -14295,6 +14295,7 @@ nav .nav-link.active {
   left: 10%;
   -webkit-filter: invert(100%);
   filter: invert(100%);
+  opacity: 0.3;
 }
 @media (max-width: 1200px) {
   .projects-showcase .aim-icon {
@@ -14308,6 +14309,7 @@ nav .nav-link.active {
   right: 10%;
   -webkit-filter: invert(100%);
   filter: invert(100%);
+  opacity: 0.3;
 }
 @media (max-width: 1200px) {
   .projects-showcase .rocket-icon {
@@ -14322,6 +14324,7 @@ nav .nav-link.active {
   transform: rotate(20deg);
   -webkit-filter: invert(100%);
   filter: invert(100%);
+  opacity: 0.3;
 }
 @media (max-width: 1300px) {
   .projects-showcase .magnet-icon {
@@ -14340,6 +14343,7 @@ nav .nav-link.active {
   right: 6%;
   -webkit-filter: invert(100%);
   filter: invert(100%);
+  opacity: 0.3;
 }
 @media (max-width: 1300px) {
   .projects-showcase .mail-icon {
