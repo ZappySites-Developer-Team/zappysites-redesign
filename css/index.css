@@ -13376,7 +13376,7 @@ nav .nav-link.active {
   width: 100%;
   height: 100%;
   background-image: url("/img/texture-2.png");
-  opacity: 0.1;
+  opacity: 0.12;
   z-index: -1;
 }
 @media (max-width: 1200px) {
