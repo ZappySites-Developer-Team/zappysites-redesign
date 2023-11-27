@@ -391,6 +391,9 @@
 
 // Testimonials
 .testimonials {
+    .header{
+        font-size: 44px;
+    }
     .testimonial {
         .flex {
             display: flex;
@@ -456,7 +459,7 @@
             }
 
             .info {
-                font-size: 1.45rem;
+                font-size: 18px;
 
                 @media (max-width: 576px) {
                     font-size: 1.2rem;
@@ -943,7 +946,7 @@
         .column {
             padding: 2.5rem 1.5rem;
             border-radius: 12px;
-            border: 1px solid $light-info;
+            border: 1px solid #1247c3;
 
             &:nth-of-type(2) {
                 background: linear-gradient(to top, #123ea6, #1241b0, #1144b9, #1247c3, #124acd);
@@ -1238,6 +1241,223 @@
 
             @media (max-width: 370px) {
                 left: 34%;
+            }
+        }
+    }
+}
+
+// Our Expertise
+.our-expertise{
+    background: $primary-gradient;
+    padding: 5rem 0;
+
+    .expertise-navs{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        gap: 3rem;
+
+        &::after{
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 2px;
+            background-color: $white;
+            z-index: 0;
+            bottom: 0;
+        }
+
+        .active{
+            z-index: 2;
+            position: relative;
+            transition: all ease 0.8s;
+            &::after{
+                position: absolute;
+                content: "";
+                width: 100%;
+                height: 2px;
+                background-color: $secondary;
+                z-index: 1;
+                bottom: 0;
+                transition: all ease 0.8s;
+            }
+        }
+
+        li{
+            list-style-type: none !important;
+
+            .flex{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                padding-bottom: 1rem;
+                .img-div{
+                    width: 5rem;
+
+                    img{
+                        width: 100%;
+                    }
+                }
+
+                .heading-div{
+                    .heading{
+                        font-size: 28px;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+
+    .tab-content{
+        .tab-pane{
+            margin-top: 2rem;
+            .flex{
+                display: flex;
+                justify-content: space-between;
+                gap: 2rem;
+                align-items: center;
+                .info-div{
+                    width: 50%;
+
+                    .heading{
+                        font-size: 40px;
+                        font-weight: 600;
+                        color: $white;
+                        margin-bottom: 1rem;
+                    }
+
+                    .info{
+                        font-size: 18px;
+                        color: $white;
+                        margin-bottom: 2rem;
+                    }
+
+                    ul{
+                        display: grid;
+                        grid-template-columns: repeat(2,1fr);
+                        row-gap: 0.5rem;
+                        margin-bottom: 2rem;
+
+                        li{
+                            color: $white;
+                            list-style-type: none;
+                            font-size: 18px;
+
+                            i{
+                                color: $secondary;
+                                margin-right: 0.5rem;
+                            }
+                        }
+                    }
+                }
+
+                .img-div{
+                    width: 50%;
+
+                    img{
+                        height: 450px;
+                        object-fit: cover;
+                        width: 100%;
+                        border-radius: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Industries We Serve
+.industries{
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+
+        @media (max-width: 1200px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @media (max-width: 992px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (max-width: 576px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .industry{
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            padding: 1.5rem 1.3rem;
+            border-radius: 6px;
+            position: relative;
+            overflow: hidden;
+            padding-bottom: 3rem;
+            .icon-div{
+                width: 4rem;
+                height: 4rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $primary;
+                border-radius: 50%;
+                margin-bottom: 1rem;
+
+                i{
+                    color: $white;
+                    font-size: 22px;
+                }
+
+                img{
+                    width: 34px;
+                }
+            }
+
+            .icon-div-second{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                top: 8%;
+                right: 8%;
+                width: fit-content;
+                height: fit-content;
+                position: absolute;
+
+                i{
+                    color: $primary;
+                    font-size: 50px;
+                    opacity: 0.1;
+                }
+
+                img{
+                    width: 68px;
+                    filter: brightness(0) saturate(100%) invert(18%) sepia(100%) saturate(3663%) hue-rotate(224deg) brightness(99%) contrast(92%);
+                    opacity: 0.2;
+                }
+            }
+
+            .title{
+                font-size: 24px;
+                font-weight: 600;
+            }
+
+            .link{
+                font-size: 16px;
+                font-weight: 400;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                background-color: $primary;
+                color: $white;
+                width: 3rem;
+                height: 2rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-top-left-radius: 50%;
             }
         }
     }

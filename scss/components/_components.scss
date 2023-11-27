@@ -92,7 +92,7 @@
     padding: 0.3rem;
     padding-right: 1.5rem;
     background-color: $primary-soft;
-
+    width: fit-content;
     span {
         font-size: 18px;
         font-weight: 500;
@@ -106,6 +106,24 @@
         min-height: 3.7rem;
         width: 3.7rem;
         height: 3.7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;;
+
+        i {
+            font-size: 20px;
+            color: $white;
+        }
+    }
+
+
+    .icon-div-small{
+        background-color: $primary;
+        border-radius: 50%;
+        min-width: 3rem;
+        min-height: 3rem;
+        width: 3rem;
+        height: 3rem;
         display: flex;
         align-items: center;
         justify-content: center;;
