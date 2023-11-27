@@ -14434,8 +14434,32 @@ nav .nav-link.active {
 }
 
 .our-expertise {
-  background: linear-gradient(to top, #123ea6, #1241b0, #1144b9, #1247c3, #124acd);
   padding: 5rem 0;
+  position: relative;
+}
+.our-expertise::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/img/texture-1.png");
+  opacity: 0.1;
+  z-index: -1;
+}
+.our-expertise::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #123ea6, #1241b0, #1144b9, #1247c3, #124acd);
+  z-index: -2;
+}
+.our-expertise .header {
+  font-size: 45px;
 }
 .our-expertise .expertise-navs {
   display: flex;

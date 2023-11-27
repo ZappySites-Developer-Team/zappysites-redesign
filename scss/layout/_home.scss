@@ -1248,9 +1248,35 @@
 
 // Our Expertise
 .our-expertise{
-    background: $primary-gradient;
     padding: 5rem 0;
+    position: relative;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('/img/texture-1.png');
+        opacity: 0.1;
+        z-index: -1;
+    }
 
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: $primary-gradient;
+        z-index: -2;
+    }
+
+    .header{
+        font-size: 45px;
+    }
     .expertise-navs{
         display: flex;
         justify-content: space-between;
@@ -1271,6 +1297,7 @@
             z-index: 2;
             position: relative;
             transition: all ease 0.8s;
+
             &::after{
                 position: absolute;
                 content: "";
@@ -1319,6 +1346,7 @@
                 justify-content: space-between;
                 gap: 2rem;
                 align-items: center;
+
                 .info-div{
                     width: 50%;
 
