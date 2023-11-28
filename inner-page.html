@@ -23,12 +23,31 @@
 </head>
 
 <body>
+
+    <div class="video-modal modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body position-relative">
+                    <button type="button" data-bs-dismiss="modal" aria-label="Close"
+                        class="icon-div btn position-absolute bg-primary border-none">
+                        <i class="fa-solid fa-xmark text-white fs-22"></i>
+                    </button>
+                    <video controls>
+                        <source src="/img/zappysites2.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <section class="nav-hero inner-page-hero pb-5">
         <!-- Navbar -->
         <nav class="navbar navbar-expand-xl">
             <div class="container">
                 <!-- Navbar Logo -->
-                <a class="navbar-brand" href="/index.html"><img src="/img/logo.png" alt="Company Logo"></a>
+                <a title="Homepage" class="navbar-brand" href="/index.html"><img src="/img/logo.png"
+                        alt="Company Logo"></a>
 
                 <button class="navbar-toggler border-none" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -39,21 +58,26 @@
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-3">
 
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/">Website Design</a>
+                            <a title="Website Design" class="nav-link active" aria-current="page"
+                                href="/local-business-website-design.html">Website Design</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
+                            <a title="Services" class="nav-link" href="#services">Services</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Reviews</a>
+                            <a title="Reviews" class="nav-link" href="/reviews.html">Reviews</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a title="Client Login" class="nav-link" href="/login.html">Client Login</a>
                         </li>
                     </ul>
 
                     <div class="d-flex align-items-center justify-content-xl-end justify-content-center mt-xl-0 mt-3">
-                        <p class="fs-19 fw-500 me-3">Sales Call</p>
-                        <a class="pill-btn " href="tel:+18328106247">
+                        <p class="fs-19 fw-500 me-3">Sales</p>
+                        <a class="pill-btn" title="Phone Number" href="tel:+18328106247">
                             <div class="icon-div">
                                 <i class="fa-solid fa-phone-volume"></i>
                             </div>
@@ -68,10 +92,6 @@
         <div class="hero">
             <div class="container">
                 <div class="flex">
-                    <div class="img-div d-none">
-                        <img class="hero-main-img" src="/img/inner-hero.jpg" alt="Man Coding">
-                    </div>
-
                     <div class="info-div">
                         <div class="pill-info">
                             <!-- <img src="/img/rocket-icon.png" alt="Rocket Icon"> -->
@@ -95,7 +115,7 @@
 
                         <div class="buttons buttons-flex">
                             <div>
-                                <a class="pill-btn " href="tel:+18328106247">
+                                <a class="pill-btn-opposite " href="tel:+18328106247">
                                     <div class="icon-div">
                                         <i class="fa-solid fa-phone-volume"></i>
                                     </div>
@@ -104,7 +124,7 @@
                             </div>
 
                             <div>
-                                <a class="pill-btn-opposite" href="tel:+18328106247">
+                                <a class="pill-btn-transparent" data-bs-toggle="modal" data-bs-target="#videoModal">
                                     <div class="icon-div">
                                         <i class="fa-solid fa-play"></i>
                                     </div>
@@ -112,7 +132,6 @@
                                 </a>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -165,7 +184,7 @@
 
                     <div class="mt-5 buttons-flex">
                         <div class="button">
-                            <a class="pill-btn " href="tel:+18328106247">
+                            <a title="Website Packages" class="pill-btn" title="Pricing" href="/pricing.html">
                                 <div class="icon-div">
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </div>
@@ -173,7 +192,8 @@
                             </a>
                         </div>
                         <div>
-                            <a class="pill-btn-opposite" href="tel:+18328106247">
+                            <a title="Play Video" class="pill-btn-opposite" title="Play" data-bs-toggle="modal"
+                                data-bs-target="#videoModal">
                                 <div class="icon-div">
                                     <i class="fa-solid fa-play"></i>
                                 </div>
@@ -191,7 +211,8 @@
                                 <p class="stars">
                                     <i class="fa-solid fa-star fs-20"></i>
                                 </p>
-                                <p class="stat ms-2 fw-500"><span class="fw-600 fs-18 pe-1">5.0 </span>| 100+ Reviews</p>
+                                <p class="stat ms-2 fw-500"><span class="fw-600 fs-18 pe-1">5.0 </span>| 100+ Reviews
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -277,19 +298,20 @@
     </section>
 
 
-
     <!-- Points Type About Us -->
     <section class="point-about-us">
         <!-- <img class="texture" src="/img/texture-1.png" alt="Texture 1"> -->
         <div class="container">
             <div class="flex">
                 <!-- Left Side -->
-                <div class="heading-side">
+                <div class="heading-side col-6">
+
                     <h3 class="header">
-                        We build websites that help you grow your business.
+                        Powerful Websites Made Easy: Built For You By Experts.
                     </h3>
                     <p class="info">
-                        We are a US based web design company that specializes in building websites for small
+                        ZappySites specializes in creating digital marketing strategies focused on delivering results
+                        for local businesses across 7,492 cities.
                     </p>
 
                     <!-- <img class="main-img" src="/img/hero-test-2.png" alt="Point Based About Us Img"> -->
@@ -301,17 +323,18 @@
                 </div>
 
                 <!-- Right Side -->
-                <div class="points-side">
+                <div class="points-side col-6">
 
                     <!-- 1 -->
                     <div class="point">
                         <div class="icon">
-                            <i class="fa-solid fa-rocket"></i>
+                            <i class="fa-solid fa-chart-line"></i>
                         </div>
                         <div class="info">
-                            <h5>Lorem Ipsum </h5>
+                            <h5>Grow Your Business</h5>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
+                                Successful internet marketing requires a powerful website designed to increase your
+                                online visibility and reach more customers.
                             </p>
                         </div>
                     </div>
@@ -319,12 +342,13 @@
                     <!-- 2 -->
                     <div class="point">
                         <div class="icon">
-                            <i class="fa-solid fa-chart-line"></i>
+                            <i class="fa-solid fa-arrow-pointer"></i>
                         </div>
                         <div class="info">
-                            <h5>Lorem Ipsum </h5>
+                            <h5>More Clicks</h5>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
+                                Online visibility starts with increasing your clicks by reaching more who are customers
+                                searching for your website.
                             </p>
                         </div>
                     </div>
@@ -332,12 +356,13 @@
                     <!-- 3 -->
                     <div class="point">
                         <div class="icon">
-                            <i class="fa-regular fa-paper-plane"></i>
+                            <i class="fa-solid fa-phone"></i>
                         </div>
                         <div class="info">
-                            <h5>Lorem Ipsum </h5>
+                            <h5>More Calls</h5>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
+                                Reaching more potential customers with a new and powerful Google-optimized website keeps
+                                your phone ringing with calls.
                             </p>
                         </div>
                     </div>
@@ -346,19 +371,20 @@
                     <!-- 4 -->
                     <div class="point">
                         <div class="icon">
-                            <i class="fa-regular fa-paper-plane"></i>
+                            <i class="fa-solid fa-user"></i>
                         </div>
                         <div class="info">
-                            <h5>Lorem Ipsum </h5>
+                            <h5>More Customers</h5>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
+                                Grow your business by engaging more customers with an amazing designed website built for
+                                you by our team.
                             </p>
                         </div>
                     </div>
 
                     <div class="buttons-flex">
                         <div>
-                            <a class="pill-btn " href="tel:+18328106247">
+                            <a class="pill-btn " title="Website Packages" href="#websitePackages">
                                 <div class="icon-div-small">
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </div>
@@ -366,7 +392,8 @@
                             </a>
                         </div>
                         <div>
-                            <a class="pill-btn-transparent" href="tel:+18328106247">
+                            <a title="Open Video" class="pill-btn-transparent" data-bs-toggle="modal"
+                                data-bs-target="#videoModal">
                                 <div class="icon-div-small">
                                     <i class="fa-solid fa-play"></i>
                                 </div>
@@ -380,30 +407,31 @@
     </section>
 
     <!-- What We Do -->
-    <section class="what-we-do">
+    <section class="what-we-do" id="services">
         <div class="container">
             <div class="flex">
                 <div class="heading-side">
-                    <h3 class="header">
-                        We build websites that help you grow your business.
+                    <h3 class="header" style="text-transform: none;">
+                        <span class="text-primary">Google-optimized</span> Websites for Local Businesses, <span
+                            class="text-primary">Built for You</span>.
                     </h3>
 
                     <p class="info">
-                        We are a US based web design company that specializes in building websites for small We are a US
-                        based web design company that specializes in building websites for small
+                        We make it easy and do the work for you.
                     </p>
 
                     <div class="buttons-flex mt-4">
                         <div>
-                            <a class="pill-btn" href="tel:+18328106247">
+                            <a title="Website Packages" class="pill-btn" href="#websitePackages">
                                 <div class="icon-div-small">
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </div>
-                                <span>Start Now</span>
+                                <span>Choose Website Package</span>
                             </a>
                         </div>
                         <div>
-                            <a class="pill-btn-transparent border-primary" href="tel:+18328106247">
+                            <a class="pill-btn-transparent border-primary" data-bs-toggle="modal"
+                                data-bs-target="#videoModal">
                                 <div class="icon-div-small bg-primary">
                                     <i class="fa-solid fa-play text-white"></i>
                                 </div>
@@ -417,28 +445,28 @@
                 <div class="items">
                     <div class="item">
                         <div class="logo-div">
-                            <i class="fa-solid fa-laptop-code"></i>
+                            <i class="fa-solid fa-phone"></i>
                         </div>
                         <h4 class="title">
-                            Websites Build For You
+                            More Calls
                         </h4>
                         <p class="info">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
+                            More calls from a ZappySites website means more revenue so you can expand your business.
                         </p>
-                        <a class="link" href="#">Start Now</a>
+                        <a title="Website Packages" class="link" href="#websitePackages">Start Now</a>
                     </div>
 
                     <div class="item">
                         <div class="logo-div">
-                            <i class="fa-solid fa-laptop-code"></i>
+                            <i class="fa-solid fa-thumbs-up"></i>
                         </div>
                         <h4 class="title">
-                            Websites Build For You
+                            More Customers
                         </h4>
                         <p class="info">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
+                            Reach more customers by increasing your company's online visibility with ZappySites.
                         </p>
-                        <a class="link" href="#">Start Now</a>
+                        <a title="Website Packages" class="link" href="#websitePackages">Start Now</a>
                     </div>
                 </div>
             </div>
@@ -446,54 +474,58 @@
             <div class="items-grid">
                 <div class="item">
                     <div class="logo-div">
-                        <i class="fa-solid fa-laptop-code"></i>
+                        <i class="fa-solid fa-trophy"></i>
                     </div>
                     <h4 class="title">
-                        Websites Build For You
+                        More Reviews
                     </h4>
                     <p class="info">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
+                        Online reviews are your word-of-mouth digital marketing strategy. Reach more customers with
+                        ZappySites.
                     </p>
-                    <a class="link" href="#">Start Now</a>
+                    <a title="Website Packages" class="link" href="#websitePackages">Start Now</a>
                 </div>
 
                 <div class="item">
                     <div class="logo-div">
-                        <i class="fa-solid fa-laptop-code"></i>
+                        <i class="fa-solid fa-arrow-pointer"></i>
                     </div>
                     <h4 class="title">
-                        Websites Build For You
+                        More Website Visitors
                     </h4>
                     <p class="info">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
+                        Search Engine Optimized websites created by ZappySites help you reach more customers and
+                        increase website visitors.
                     </p>
-                    <a class="link" href="#">Start Now</a>
+                    <a title="Website Packages" class="link" href="#websitePackages">Start Now</a>
                 </div>
 
                 <div class="item">
                     <div class="logo-div">
-                        <i class="fa-solid fa-laptop-code"></i>
+                        <i class="fa-solid fa-sack-dollar"></i>
                     </div>
                     <h4 class="title">
-                        Websites Build For You
+                        More Leads
                     </h4>
                     <p class="info">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
+                        Generate leads and boost your business growth by reaching potential customers with a ZappySites
+                        website.
                     </p>
-                    <a class="link" href="#">Start Now</a>
+                    <a title="Website Packages" class="link" href="#websitePackages">Start Now</a>
                 </div>
 
                 <div class="item">
                     <div class="logo-div">
-                        <i class="fa-solid fa-laptop-code"></i>
+                        <i class="fa-solid fa-bolt"></i>
                     </div>
                     <h4 class="title">
-                        Websites Build For You
+                        Digital Marketing
                     </h4>
                     <p class="info">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
+                        Digital Marketing to grow your business starts with a professional website designed to reach
+                        more customers.
                     </p>
-                    <a class="link" href="#">Start Now</a>
+                    <a title="Website Packages" class="link" href="#websitePackages">Start Now</a>
                 </div>
             </div>
         </div>
@@ -505,18 +537,17 @@
             <div class="flex">
                 <div class="info-div">
                     <h3 class="header">
-                        We build websites that help you grow your business.
+                        Get More Customers. Grow Your Business.
                     </h3>
 
                     <p class="info">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor
-                        sit amet consectetur adipisicing elit. Quisquam, voluptatum.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Supercharge your company's online visibility to get more Clicks, Calls and Customers with our
+                        powerful websites created by our digital marketing experts for your business.
                     </p>
 
                     <div class="mt-5 buttons-flex">
                         <div class="button">
-                            <a class="pill-btn " href="tel:+18328106247">
+                            <a class="pill-btn" title="Website Pricing" href="#websitePackages">
                                 <div class="icon-div">
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </div>
@@ -524,7 +555,8 @@
                             </a>
                         </div>
                         <div>
-                            <a class="pill-btn-transparent" href="tel:+18328106247">
+                            <a class="pill-btn-transparent" title="Play Video" data-bs-toggle="modal"
+                                data-bs-target="#videoModal">
                                 <div class="icon-div">
                                     <i class="fa-solid fa-play"></i>
                                 </div>
@@ -542,7 +574,7 @@
     </section>
 
     <!-- Pricing Tables -->
-    <section class="pricing-tables">
+    <section class="pricing-tables" id="websitePackages">
         <div class="container">
             <p class="sub-header mx-auto">Our Plans</p>
             <h2 class="header text-center mb-5">Start Reaching More Customers Online</h2>
@@ -551,11 +583,11 @@
                 <div class="column">
                     <div>
                         <div class="top-icon-div">
-                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-award"></i>
                         </div>
                     </div>
                     <h2 class="heading">
-                        Enterprise Website
+                        Premier Website
                     </h2>
                     <p class="sub-data">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
@@ -587,7 +619,7 @@
                         </ul>
                     </div>
                     <div>
-                        <a class="pill-btn " href="tel:+18328106247">
+                        <a title="Choose Plan Premier" class="pill-btn" href="#">
                             <div class="icon-div">
                                 <i class="fa-solid fa-arrow-right"></i>
                             </div>
@@ -600,10 +632,10 @@
                 <div class="column">
                     <div class="d-flex mb-4 align-items-center justify-content-between">
                         <div class="top-icon-div mb-0">
-                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-solid fa-trophy"></i>
                         </div>
                         <div class="spf-1">
-                            <p>Best Offers <img src="/img/fire-icon.png" alt="Fire Icon"></p>
+                            <p>Most Popular <img src="/img/fire-icon.png" alt="Fire Icon"></p>
                         </div>
                     </div>
                     <h2 class="heading">
@@ -613,7 +645,7 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
                     </p>
                     <p class="price">
-                        $49<span>/mo</span>
+                        $159<span>/mo</span>
                     </p>
                     <div class="features">
                         <p class="feature-head">What's Included:</p>
@@ -639,7 +671,7 @@
                         </ul>
                     </div>
                     <div>
-                        <a class="pill-btn " href="tel:+18328106247">
+                        <a title="Choose Plan Premium" class="pill-btn" href="#">
                             <div class="icon-div">
                                 <i class="fa-solid fa-arrow-right"></i>
                             </div>
@@ -652,17 +684,17 @@
                 <div class="column">
                     <div>
                         <div class="top-icon-div">
-                            <i class="fa-regular fa-lightbulb"></i>
+                            <i class="fa-solid fa-award"></i>
                         </div>
                     </div>
                     <h2 class="heading">
-                        Google Ads + Enterprise Website
+                        Platinum Website (+ SEO)
                     </h2>
                     <p class="sub-data">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
                     </p>
                     <p class="price">
-                        $499<span>/mo</span>
+                        $299<span>/mo</span>
                     </p>
                     <div class="features">
                         <p class="feature-head">What's Included:</p>
@@ -686,7 +718,7 @@
                         </ul>
                     </div>
                     <div>
-                        <a class="pill-btn " href="tel:+18328106247">
+                        <a title="Choose Plan Platinum" class="pill-btn" href="">
                             <div class="icon-div">
                                 <i class="fa-solid fa-arrow-right"></i>
                             </div>
