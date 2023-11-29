@@ -4,26 +4,206 @@
         display: flex;
         justify-content: center;
         gap: 2rem;
-        
-        .column{
+        flex-wrap: wrap;
+
+        .column {
             width: 30%;
-            padding: 1rem 1.5rem;
+            padding: 2rem 1.5rem;
             box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
             display: flex;
             flex-direction: column;
             align-items: center;
+            border-radius: 12px;
+            position: relative;
 
-            .icon-div{
+            @media (min-width: 350px) {
+                min-width: 350px
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 30%;
+                background: $primary-gradient;
+                border-radius: 12px 12px 0 0;
+                z-index: -1;
+            }
+
+            .icon-div {
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
                 width: 6rem;
                 height: 6rem;
+                border-radius: 50%;
                 display: flex;
                 justify-content: center;
-                al
-                img{
+                align-items: center;
+                margin: 1rem 0;
+                background-color: $white;
+
+                img {
                     width: 3rem;
                     height: 3rem;
-
+                    min-width: 3rem;
+                    min-height: 3rem;
                 }
+            }
+
+            h5 {
+                font-size: 1.5rem;
+                font-weight: 600;
+                margin-bottom: 1rem;
+            }
+
+            p {
+                text-align: center;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+// Stacked Reviews
+.stacked-reviews {
+    padding: 4rem 0;
+    position: relative;
+    margin-top: 2rem;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('/img/texture-1.png');
+        opacity: 0.2;
+        z-index: -1;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: $primary-gradient;
+        z-index: -2;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+
+        @media (max-width: 768px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .column {
+            text-align: center;
+            border: 3px solid $success;
+            border-radius: 12px;
+            padding: 1rem 1.5rem 2rem;
+            position: relative;
+
+            &::before{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 23%;
+                background-color: $success;
+                border-radius: 12px 12px 0 0;
+                z-index: -1;
+            }
+
+            .img-div {
+                width: 6rem;
+                height: 6rem;
+                margin: 0 auto;
+                margin-top: 2rem;
+                margin-bottom: 1rem;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                    border: 3px solid $primary;
+                }
+            }
+
+            .info-div {
+                margin-top: 0rem;
+
+                .name {
+                    font-size: 24px;
+                    font-weight: 600;
+                    margin-bottom: 0.5rem;
+                    color: $white;
+                }
+
+                .info {
+                    font-size: 18px;
+                    font-weight: 400;
+                    color: $white;
+                    margin-bottom: 1rem;
+
+                    i {
+                        font-size: 30px;
+                        color: $primary;
+                    }
+                }
+
+                .industry {
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: $white;
+                }
+
+                .stars {
+                    margin-top: 0.5rem;
+
+                    i {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// Legal
+.legal{
+    .partition{
+        margin: 2rem 0;
+        .header{
+            text-align: center;
+            font-weight: 500;
+        }
+
+        p{
+            font-size: 18px;
+        }
+
+        .pointed-header{
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+
+        hr{
+            margin: 2rem 0 !important;
+        }
+
+        ol{
+            li{
+                font-size: 18px;
+                padding-left: 1rem;
             }
         }
     }

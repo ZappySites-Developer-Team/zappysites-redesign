@@ -1,5 +1,5 @@
 .inner-page-hero {
-    .hero-bg{
+    .hero-bg {
         position: absolute;
         top: 0;
         left: 0;
@@ -7,9 +7,54 @@
         height: 100%;
         z-index: -1;
     }
+
     .hero {
+
+        &::after{
+            display: none !important;
+        }
         padding: 3.5rem 0;
         background: $primary-gradient;
+
+        .info-div {
+            width: 100% !important;
+            padding-bottom: inherit !important;
+
+            .first-heading {
+                color: $white !important;
+                margin-bottom: 1rem !important;
+            }
+
+            .second-heading {
+                color: $white;
+                margin-bottom: 1.5rem !important;
+            }
+
+            .hero-info {
+                color: $white !important;
+                margin-bottom: 2rem !important;
+            }
+        }
+    }
+}
+
+.inner-page-hero-gradient {
+    .hero-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        object-fit: cover;
+        object-position: right;
+    }
+
+    .hero {
+        position: relative;
+        padding: 3.5rem 0;
+        background: rgb(18, 74, 205);
+        background: linear-gradient(86deg, rgb(8, 59, 179) 0%, rgba(18, 74, 205, 0.8468837535014006) 67%, rgba(8, 61, 184, 0.578) 100%);
 
         .info-div {
             width: 100% !important;
@@ -405,9 +450,6 @@
 
 // Testimonials
 .testimonials {
-    .header {
-        font-size: 44px;
-    }
 
     .testimonial {
         .flex {
@@ -840,6 +882,48 @@
 }
 
 // What we do
+
+.what-we-do-bg{
+    padding: 3rem 0;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('/img/texture-2.png');
+        opacity: 0.1;
+        z-index: -1;
+    }
+
+    &::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -2;    
+        background: $primary-gradient;
+    }
+
+    .header{
+        color: $white;
+    }
+
+    .item{
+        background-color: $white;
+        p{
+            color: $dark;
+        }
+    }
+
+    p{
+        color: $white;
+    }
+}
 .what-we-do {
     .flex {
         display: flex;
@@ -1838,6 +1922,7 @@ footer {
             display: flex;
             flex-direction: column;
             justify-content: center;
+
             @media (max-width: 1200px) {
                 width: 100%;
             }

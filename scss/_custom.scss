@@ -129,11 +129,16 @@ p {
     color: $white;
     font-weight: 500;
     border: 2px solid $primary;
+    transition: all 100ms;
 
     &:hover {
         color: $primary;
         background-color: transparent;
         border: 2px solid $primary;
+
+        span{
+            color: $primary;
+        }
     }
 }
 
