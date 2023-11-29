@@ -14843,7 +14843,7 @@ nav .nav-link.active {
   width: 100%;
   max-height: 450px;
   object-fit: cover;
-  object-position: top;
+  object-position: 70% 50%;
   border-radius: 12px;
 }
 
