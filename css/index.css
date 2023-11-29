@@ -14842,7 +14842,7 @@ nav .nav-link.active {
   width: 100%;
   max-height: 450px;
   object-fit: cover;
-  object-position: 70% 50%;
+  object-position: top;
   border-radius: 12px;
 }
 
@@ -15192,7 +15192,7 @@ a.login:visited {
   display: flex;
   justify-content: center;
 }
-.media-list .flex .column .icon-div img {
+.media-list .flex .column .icon-div al img {
   width: 3rem;
   height: 3rem;
 }
