@@ -1,3 +1,4 @@
+// Media Page
 .media-list {
     .flex {
         display: flex;
@@ -6,7 +7,23 @@
         
         .column{
             width: 30%;
+            padding: 1rem 1.5rem;
             box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .icon-div{
+                width: 6rem;
+                height: 6rem;
+                display: flex;
+                justify-content: center;
+                img{
+                    width: 3rem;
+                    height: 3rem;
+
+                }
+            }
         }
     }
 }
