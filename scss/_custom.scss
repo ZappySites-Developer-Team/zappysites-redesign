@@ -191,8 +191,6 @@ p {
     }
 }
 
-
-
 .btn-warning {
     color: $white;
 }
@@ -270,3 +268,7 @@ section {
     margin-bottom: 0.7rem;
 }
 .underline { text-decoration:underline !important; }
+
+.bg-gradient{
+    background: $primary-gradient !important;
+}
