@@ -10,9 +10,10 @@
 
     .hero {
 
-        &::after{
+        &::after {
             display: none !important;
         }
+
         padding: 3.5rem 0;
         background: $primary-gradient;
 
@@ -38,6 +39,32 @@
     }
 }
 
+
+.inner-page-hero-gradient.nav-hero {
+    .hero {
+        content: "";
+        background-image: url("/img/dotted-element-light.png");
+        background-repeat: no-repeat;
+        background-size: 17%;
+        position: relative;
+
+        &::after {
+            content: "";
+            background: rgb(18, 74, 205);
+            background: linear-gradient(86deg, rgb(8, 59, 179) 0%, rgba(18, 74, 205, 0.9168837535014006) 77%, rgba(8, 61, 184, 0.868) 100%);
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            position: absolute;
+            display: block !important;
+            background-color: none !important;
+        }
+    }
+}
+
+
 .inner-page-hero-gradient {
     .hero-bg {
         position: absolute;
@@ -53,8 +80,6 @@
     .hero {
         position: relative;
         padding: 3.5rem 0;
-        background: rgb(18, 74, 205);
-        background: linear-gradient(86deg, rgb(8, 59, 179) 0%, rgba(18, 74, 205, 0.9168837535014006) 77%, rgba(8, 61, 184, 0.868) 100%);
 
         .info-div {
             width: 100% !important;
@@ -117,6 +142,7 @@
         }
     }
 }
+
 
 .nav-hero {
     margin-bottom: 0;
@@ -885,9 +911,10 @@
 
 // What we do
 
-.what-we-do-bg{
+.what-we-do-bg {
     padding: 3rem 0;
     position: relative;
+
     &::before {
         content: '';
         position: absolute;
@@ -900,32 +927,34 @@
         z-index: -1;
     }
 
-    &::after{
+    &::after {
         content: "";
         position: absolute;
         width: 100%;
         height: 100%;
         top: 0;
         left: 0;
-        z-index: -2;    
+        z-index: -2;
         background: $primary-gradient;
     }
 
-    .header{
+    .header {
         color: $white;
     }
 
-    .item{
+    .item {
         background-color: $white;
-        p{
+
+        p {
             color: $dark;
         }
     }
 
-    p{
+    p {
         color: $white;
     }
 }
+
 .what-we-do {
     .flex {
         display: flex;
