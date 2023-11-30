@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lawn Website Design Services - ZappySites</title>
+    <title>Websites for Business - ZappySites</title>
 
     <meta name="description" content="">
     <meta name="keywords" content="">
@@ -23,7 +23,6 @@
 </head>
 
 <body>
-
     <div class="video-modal modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel"
         aria-hidden="true">
         <div class="modal-dialog">
@@ -41,7 +40,7 @@
         </div>
     </div>
 
-    <section class="nav-hero inner-page-hero shadow">
+    <section class="nav-hero inner-hero pb-5">
         <!-- Navbar -->
         <nav class="navbar navbar-expand-xl">
             <div class="container">
@@ -88,26 +87,97 @@
             </div>
         </nav>
 
-      </section>
+        <!-- Hero Section -->
+        <div class="hero">
+            <div class="container">
+                <div class="flex">
+                    <div class="img-div">
+                        <img class="hero-main-img" src="/img/inner-hero.jpg" alt="Man Coding">
+                    </div>
 
-      <!-- About Us 1 -->
-      <section class="about-us-light py-5 my-5">
+                    <div class="info-div">
+                        <h1 class="first-heading">
+                            We build websites that help you grow your business <span class="text-primary">.</span>
+                        </h1>
+
+                        <h2 class="second-heading">
+                            We are a US based web design company that specializes in building websites for small
+                            businesses.
+                        </h2>
+                        <p class="hero-info">
+                            We are a US based web design company that specializes in building websites for small
+                            businesses. We are a US based web design company that specializes in building websites for
+                            small businesses. We are a US based web design company that specializes in building websites
+                            for small
+                            businesses.
+                        </p>
+
+                        <div class="buttons buttons-flex">
+                            <div>
+                                <a class="pill-btn " href="tel:+18328106247">
+                                    <div class="icon-div">
+                                        <i class="fa-solid fa-phone-volume"></i>
+                                    </div>
+                                    <span>(832) 810-6247</span>
+                                </a>
+                            </div>
+
+                            <div>
+                                <a class="pill-btn-opposite" data-bs-toggle="modal" data-bs-target="#videoModal">
+                                    <div class="icon-div">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                    <span>How It Works </span>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Logos Marquee -->
+    <section data-aos="fade-up" class="marquee-section">
+        <div class="marquee">
+            <div class="marquee_group">
+                <img src="/img/c-logo-2.png" alt="Brand">
+                <img aria-hidden="true" src="/img/c-logo-1.png" alt="brand 1">
+                <img aria-hidden="true" src="/img/c-logo-2.png" alt="brand 2">
+                <img aria-hidden="true" src="/img/c-logo-3.png" alt="brand 3">
+                <img aria-hidden="true" src="/img/c-logo-4.png" alt="brand 4">
+            </div>
+
+            <div aria-hidden="true" class="marquee_group">
+                <img src="/img/c-logo-2.png" alt="Brand Hidden">
+                <img aria-hidden="true" src="/img/c-logo-1.png" alt="brand 1 hidden">
+                <img aria-hidden="true" src="/img/c-logo-2.png" alt="brand 2 hidden">
+                <img aria-hidden="true" src="/img/c-logo-3.png" alt="brand 3 hidden">
+                <img aria-hidden="true" src="/img/c-logo-4.png" alt="brand 4 hidden">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us 1 -->
+    <section class="about-us-light">
         <div class="container">
             <div class="flex">
                 <div class="info-div">
                     <h3 class="header">
-                        Responsive Websites that gets you more customers.
+                        We build websites that help you grow your business.
                     </h3>
 
                     <p class="info">
-                        Our expert team specializes in developing powerful, user-friendly, and Google optimized websites
-                        for every industry. We make it easy and do the work for you.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor
+                        sit amet consectetur adipisicing elit. Quisquam, voluptatum.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     </p>
 
                     <div class="stats">
                         <div class="column">
                             <p class="number">
-                                20 <span>+</span> YEARS
+                                20 <span>+</span> Years
                             </p>
                             <p class="stat-info">
                                 Website Expertise
@@ -115,7 +185,7 @@
                         </div>
 
                         <div class="column">
-                            <p class="number">
+                             <p class="number">
                                 2,200 <span>+</span>
                             </p>
                             <p class="stat-info">
@@ -124,11 +194,11 @@
                         </div>
 
                         <div class="column">
-                            <p class="number">
+                           <p class="number">
                                 7,492 <span>+</span>
                             </p>
                             <p class="stat-info">
-                                Cities Serviced
+                                Cities Services*
                             </p>
                         </div>
                     </div>
@@ -155,9 +225,9 @@
                 </div>
 
                 <div class="img-div">
-                    <img class="main-img object-fit-contain" src="/img/section1.png" alt="Happy Man">
+                    <img class="main-img" src="/img/happy-man.jpg" alt="Happy Man">
                     <div class="ratings-spf">
-                        <!-- <div class="customers-overview">
+                        <div class="customers-overview">
                             <div class="star-ratings d-flex">
                                 <p class="stars">
                                     <i class="fa-solid fa-star fs-20"></i>
@@ -165,103 +235,197 @@
                                 <p class="stat ms-2 fw-500"><span class="fw-600 fs-18 pe-1">5.0 </span>| 100+ Reviews
                                 </p>
                             </div>
-                        </div> -->
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
- <!-- Logos Marquee -->
- <section data-aos="fade-up" class="marquee-section nomargin">
-    <div class="marquee">
-        <div class="marquee_group">
-            <img src="/img/c-logo-2.png" alt="Brand">
-            <img aria-hidden="true" src="/img/c-logo-1.png" alt="brand 1">
-            <img aria-hidden="true" src="/img/c-logo-2.png" alt="brand 2">
-            <img aria-hidden="true" src="/img/c-logo-3.png" alt="brand 3">
-            <img aria-hidden="true" src="/img/c-logo-4.png" alt="brand 4">
-        </div>
-
-        <div aria-hidden="true" class="marquee_group">
-            <img src="/img/c-logo-2.png" alt="Brand Hidden">
-            <img aria-hidden="true" src="/img/c-logo-1.png" alt="brand 1 hidden">
-            <img aria-hidden="true" src="/img/c-logo-2.png" alt="brand 2 hidden">
-            <img aria-hidden="true" src="/img/c-logo-3.png" alt="brand 3 hidden">
-            <img aria-hidden="true" src="/img/c-logo-4.png" alt="brand 4 hidden">
-        </div>
-    </div>
-</section>
-<!-- Project Showcase -->
-    <section class="projects-showcase position-relative">
+    <!-- Testimonials -->
+    <section class="testimonials">
         <div class="container">
-            <p class="sub-header-small text-center text-white">Examples of Our Work:</p>
-            <h3 class="header text-center mb-5 text-white">Powerful Websites <u class="underline">Built for You</u> by Experts.</h3>
+            <h2 class="header text-center">Our Success Stories</h2>
+            <div class="testimonials-slider">
 
-            <img class="aim-icon" src="/img/aim-scribble.png" alt="Aim Scribbles">
-            <img class="mail-icon" src="/img/mail-scribble.png" alt="Mail Scribble">
-            <img class="rocket-icon" src="/img/rocket-scribble.png" alt="Rocket Scribble">
-            <img class="magnet-icon" src="/img/magnet-scribble.png" alt="Magnet Scribble">
-
-            <div class="position-relative">
-                <div class="projects-slider">
-                    <div class="project">
+                <!-- Slider 1 -->
+                <div class="testimonial">
+                    <div class="flex">
                         <div class="img-div">
-                            <img class="laptop" src="/img/project-1.png"
-                                alt="Websites for Lawn Care, Landscaping Businesses">
+                            <img src="/img/profile-1.jpg" alt="testimonial profile 1">
                         </div>
-                    </div>
-
-                    <div class="project">
-                        <div class="img-div">
-                            <img class="laptop" src="/img/project-2.png" alt="Websites for Locksmith, Key Service">
-                        </div>
-                    </div>
-
-                    <div class="project">
-                        <div class="img-div">
-                            <img class="laptop" src="/img/project-3.png" alt="Websites for Auto Repair, Car Mechanic">
-                        </div>
-                    </div>
-
-                    <div class="project">
-                        <div class="img-div">
-                            <img class="laptop" src="/img/project-4.png" alt="Website Design for Local Businesses">
-                        </div>
-                    </div>
-
-                    <div class="project">
-                        <div class="img-div">
-                            <img class="laptop" src="/img/project-5.png"
-                                alt="Website Design for Daycares, Childcares, and Preschools">
-                        </div>
-                    </div>
-
-                    <div class="project">
-                        <div class="img-div">
-                            <img class="laptop" src="/img/project-6.png" alt="Website Design for Smart Businesses">
-                        </div>
-                    </div>
-
-                    <div class="project">
-                        <div class="img-div">
-                            <img class="laptop" src="/img/project-7.png" alt="HVAC Website Design Services">
+                        <div class="data-div">
+                            <img class="quote" src="/img/quote.png" alt="Quote 1">
+                            <p class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </p>
+                            <p class="info">
+                                It would have taken months to build the product team that we inherited overnight with
+                                Leapfrog. They’re built for startup speed, and they have consistently delivered a
+                                well-engineered product for us.
+                            </p>
+                            <div class="logo-flex">
+                                <div>
+                                    <p class="name">Ross Jenkins</p>
+                                    <p class="position">Owner of Lorem</p>
+                                </div>
+                                <div class="logo">
+                                    <img src="/img/logo.png" alt="Logo 1">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <p class="text-white text-center col-md-6 mx-auto mt-4">
-                    We build the website for you.
-                </p>
-
-                <div class="d-flex mt-4">
-                    <a class="btn btn-light rounded-pill px-5 fs-20 mx-auto" title="Call Now" href="#websitePackages">
-                        Get My Website
-                    </a>
+                <!-- Slider 2 -->
+                <div class="testimonial">
+                    <div class="flex">
+                        <div class="img-div">
+                            <img src="/img/image1.jpg" alt="testimonial profile 1">
+                        </div>
+                        <div class="data-div">
+                            <img class="quote" src="/img/quote.png" alt="Quote 1">
+                            <p class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </p>
+                            <p class="info">
+                                It would have taken months to build the product team that we inherited overnight with
+                                Leapfrog. They’re built for startup speed, and they have consistently delivered a
+                                well-engineered product for us.
+                            </p>
+                            <div class="logo-flex">
+                                <div>
+                                    <p class="name">Ross Jenkins</p>
+                                    <p class="position">Owner of Lorem</p>
+                                </div>
+                                <div class="logo">
+                                    <img src="/img/testimonial-logo-2.png" alt="Logo 1">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Points Type About Us -->
+    <section class="point-about-us">
+        <!-- <img class="texture" src="/img/texture-1.png" alt="Texture 1"> -->
+        <div class="container">
+            <div class="flex">
+                <!-- Left Side -->
+                <div class="heading-side col-6">
+
+                    <h3 class="header">
+                        Powerful Websites Made Easy: Built For You By Experts.
+                    </h3>
+                    <p class="info">
+                        ZappySites specializes in creating digital marketing strategies focused on delivering results
+                        for local businesses across 7,492 cities.
+                    </p>
+
+                    <!-- <img class="main-img" src="/img/hero-test-2.png" alt="Point Based About Us Img"> -->
+
+                    <video controls poster="/img/image1.jpg">
+                        <source src="/img/zappysites2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <!-- Right Side -->
+                <div class="points-side col-6">
+
+                    <!-- 1 -->
+                    <div class="point">
+                        <div class="icon">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <div class="info">
+                            <h5>Grow Your Business</h5>
+                            <p>
+                                Successful internet marketing requires a powerful website designed to increase your
+                                online visibility and reach more customers.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- 2 -->
+                    <div class="point">
+                        <div class="icon">
+                            <i class="fa-solid fa-arrow-pointer"></i>
+                        </div>
+                        <div class="info">
+                            <h5>More Clicks</h5>
+                            <p>
+                                Online visibility starts with increasing your clicks by reaching more who are customers
+                                searching for your website.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- 3 -->
+                    <div class="point">
+                        <div class="icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="info">
+                            <h5>More Calls</h5>
+                            <p>
+                                Reaching more potential customers with a new and powerful Google-optimized website keeps
+                                your phone ringing with calls.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <!-- 4 -->
+                    <div class="point">
+                        <div class="icon">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="info">
+                            <h5>More Customers</h5>
+                            <p>
+                                Grow your business by engaging more customers with an amazing designed website built for
+                                you by our team.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="buttons-flex">
+                        <div>
+                            <a class="pill-btn " title="Website Packages" href="#websitePackages">
+                                <div class="icon-div-small">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </div>
+                                <span>Start Now</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a title="Open Video" class="pill-btn-transparent" data-bs-toggle="modal"
+                                data-bs-target="#videoModal">
+                                <div class="icon-div-small">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <span>How It Works </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 
     <!-- What We Do -->
     <section class="what-we-do" id="services">
@@ -388,8 +552,7 @@
         </div>
     </section>
 
-
-<!-- About Us 1 -->
+    <!-- About Us 1 -->
     <section class="about-us">
         <div class="container">
             <div class="flex">
@@ -413,8 +576,7 @@
                             </a>
                         </div>
                         <div>
-                            <a class="pill-btn-transparent" title="Play Video" data-bs-toggle="modal"
-                                data-bs-target="#videoModal">
+                            <a class="pill-btn-transparent" title="Play Video" data-bs-toggle="modal" data-bs-target="#videoModal">
                                 <div class="icon-div">
                                     <i class="fa-solid fa-play"></i>
                                 </div>
@@ -431,7 +593,6 @@
         </div>
     </section>
 
-    
     <!-- Pricing Tables -->
     <section class="pricing-tables" id="websitePackages">
         <div class="container">
@@ -711,45 +872,60 @@
                         <img class="logo" src="/img/footer-logo.png" alt="Company Logo">
                     </div>
                     <p class="info">
-                        Our expert team specializes in developing powerful, user-friendly, and Google optimized websites
-                        for every industry.
+                        Supercharge your online visibility with a powerful, Search Engine Optimized website, developed and managed by experts for local businesses.
                     </p>
                 </div>
 
                 <div class="column">
                     <h6 class="footer-head">Company</h6>
-                    <a class="footer-link" href="">Our Company</a>
-                    <a class="footer-link" href="">Our Company</a>
-                    <a class="footer-link" href="">Our Company</a>
-                    <a class="footer-link" href="">Our Company</a>
+                    <a title="ZappySites Company" class="footer-link" href="/company">Our Company</a>
+                    <a title="ZappySites Media and Press Info" class="footer-link" href="/media.html">Media and Press</a>
+                    <a title="Contact ZappySites" class="footer-link" href="/contact">Contact Us</a>
+                    <a title="Frequently Asked Questions" class="footer-link" href="/faq">FAQ</a>
                 </div>
 
                 <div class="column">
                     <h6 class="footer-head">Services</h6>
-                    <a class="footer-link" href="">Our Company</a>
-                    <a class="footer-link" href="">Our Company</a>
-                    <a class="footer-link" href="">Our Company</a>
-                    <a class="footer-link" href="">Our Company</a>
+                    <a title="Digital Marketing" class="footer-link" href="/digital-marketing">Digital Marketing</a>
+                    <a title="Website Design for Businesses" class="footer-link" href="">Website Design</a>
+                    <a title="Search Engine Optimization Agency" class="footer-link" href="">SEO</a>
+                    <a title="Lead Generation Agency for Local Businesses" class="footer-link" href="">Lead Generation</a>
                 </div>
 
                 <div class="column">
-                    <h6 class="footer-head">Contact Us</h6>
-                    <a class="footer-link" href="tel:+18328106247">
+                    <h6 class="footer-head">Sales</h6>
+                    <a class="footer-link" title="Sales" href="tel:+18328106247">
                         <i class="fa-solid fa-phone"></i>
                         +1 (832) 810-6247
                     </a>
-                    <a class="footer-link" href="tel:+18328106247">
+                    <a class="footer-link" href="mailto:hello@zappysites.com">
                         <i class="fa-regular fa-envelope"></i>
-                        zappysites@gmail.com
+                        hello@zappysites.com
                     </a>
+					
+					<div class="flex">
+					<a title="Client Login" class="pill-btn-transparent mt-4" href="tel:+18328106247">
+						<div class="icon-div-small">
+							<i class="fa-solid fa-user"></i>
+						</div>
+						<span>Client Login</span>
+					</a>
+					</div>
+					
                 </div>
             </div>
             <p class="text-center text-white mt-5 fs-18 border-top border-1 border-success pt-4">
                 &copy; 2023 ZappySites, LLC. All Rights Reserved.
             </p>
+            <p class="text-center text-white mt-5 fs-18 pt-4">
+                <a title="Terms of Service" class="text-white" href="/legal/terms-of-use">Terms</a> &nbsp; &middot; &nbsp; 
+                <a title="Privacy Policy" class="text-white" href="/legal/privacy-policy">Privacy</a> &nbsp; &middot; &nbsp; 
+                <a title="Disclaimer" class="text-white" href="/legal/disclaimer">Disclaimer</a>
+            </p>
         </div>
     </footer>
-
+	
+	
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>

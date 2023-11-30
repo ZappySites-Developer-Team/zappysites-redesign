@@ -59,7 +59,7 @@
 
                         <li class="nav-item">
                             <a title="Website Design for Businesses" class="nav-link active" aria-current="page"
-                                href="/websites-for-business">Website Design</a>
+                                href="/websites-for-business.html">Website Design</a>
                         </li>
 
                         <li class="nav-item">
@@ -776,8 +776,8 @@
     <!-- Project Showcase -->
     <section class="projects-showcase position-relative">
         <div class="container">
-            <p class="sub-header-small text-center text-white">Examples of Our Work:</p>
-            <h3 class="header text-center mb-5 text-white">Powerful Websites <u>Built for You</u> by Experts.</h3>
+            <p class="sub-header-small text-center text-white">Projects Showcase</p>
+            <h3 class="header text-center mb-5 text-white">Powerful Websites Built for You by Experts.</h3>
 
             <img class="aim-icon" src="/img/aim-scribble.png" alt="Aim Scribbles">
             <img class="mail-icon" src="/img/mail-scribble.png" alt="Mail Scribble">
@@ -1699,7 +1699,7 @@
                 <div class="column">
                     <h6 class="footer-head">Company</h6>
                     <a title="ZappySites Company" class="footer-link" href="/company">Our Company</a>
-                    <a title="ZappySites Media and Press Info" class="footer-link" href="/media">Media and Press</a>
+                    <a title="ZappySites Media and Press Info" class="footer-link" href="/media.html">Media and Press</a>
                     <a title="Contact ZappySites" class="footer-link" href="/contact">Contact Us</a>
                     <a title="Frequently Asked Questions" class="footer-link" href="/faq">FAQ</a>
                 </div>
