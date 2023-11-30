@@ -13418,13 +13418,27 @@ nav .nav-link.active {
   color: #fff !important;
   margin-bottom: 2rem !important;
 }
-
+@keyframes bgAnimation {
+  from {
+    background-size: auto 200%;
+  }
+  to {
+    background-size: auto 150%;
+  }
+} 
 .inner-page-hero-gradient.nav-hero .hero {
   content: "";
-  background-image: url("/img/dotted-element-light.png");
+  background-image: url("/img/dotted-element-light.png"), url("/img/dotted-element-light-flipped.png");
   background-repeat: no-repeat;
-  background-size: 17%;
+  background-size: auto 150%;
+  background-position: left top, right top;
+  animation: bgAnimation 800ms ease-in-out;
   position: relative;
+}
+
+.inner-page-hero-gradient.nav-hero .hero:hover {
+	background-size: auto 175%;
+	
 }
 .inner-page-hero-gradient.nav-hero .hero::after {
   content: "";
