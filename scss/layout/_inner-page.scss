@@ -208,3 +208,38 @@
         }
     }
 }
+
+.domain-search{
+    position: relative;
+    border-radius: 50rem !important;
+    width: 50%;
+    height: 3rem;
+    margin: 3rem 0;
+
+    input{
+        color: $dark;
+        padding-right: 130px;
+        z-index: 1;
+    }
+    
+    span{
+        background-color: $primary;
+        border-radius: 50rem;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        height: 100%;
+        padding: 0 2rem;
+        border-top-left-radius: inherit !important;
+        border-bottom-left-radius: inherit !important;
+        z-index: 2;
+    }
+
+    .form-control:focus{
+        color: $dark;
+    }
+}
+
+.input-group > .form-control:focus, .input-group > .form-select:focus, .input-group > .form-floating:focus-within {
+    z-index: inherit;
+}
