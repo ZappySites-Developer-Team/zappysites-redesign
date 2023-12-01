@@ -24,16 +24,16 @@
 
 <body>
 
-<div class="video-modal modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel"
+    <div class="video-modal modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel"
         aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-body position-relative">
-                    <button type="button" data-bs-dismiss="modal" aria-label="Close"
+                    <button id="closeVideo" type="button" data-bs-dismiss="modal" aria-label="Close"
                         class="icon-div btn position-absolute bg-primary border-none">
                         <i class="fa-solid fa-xmark text-white fs-22"></i>
                     </button>
-                    <video controls>
+                    <video id="mainVideo" controls>
                         <source src="/img/zappysites2.mp4" type="video/mp4">
                     </video>
                 </div>
@@ -59,7 +59,7 @@
 
                         <li class="nav-item">
                             <a title="Website Design for Businesses" class="nav-link active" aria-current="page"
-                                href="/websites-for-business">Website Design</a>
+                                href="/websites-for-business.html">Website Design</a>
                         </li>
 
                         <li class="nav-item">
@@ -71,7 +71,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a title="Client Login" class="nav-link" href="/login">Client Login</a>
+                            <a title="Client Login" class="nav-link" href="/login.html">Client Login</a>
                         </li>
                     </ul>
 
@@ -81,7 +81,7 @@
                             <div class="icon-div">
                                 <i class="fa-solid fa-phone-volume"></i>
                             </div>
-                            <span>(832) 810-6247</span>
+                            <span>+1 (832) 810-6247</span>
                         </a>
                     </div>
                 </div>
@@ -117,7 +117,7 @@
                                     <div class="icon-div">
                                         <i class="fa-solid fa-phone-volume"></i>
                                     </div>
-                                    <span>(832) 810-6247</span>
+                                    <span>+1 (832) 810-6247</span>
                                 </a>
                             </div>
 
@@ -860,7 +860,7 @@
         <div class="row pb-4 mb-2">
 
             <div class="col-12 col-lg-5">
-                <img class="img img-fluid h-100 object-fit-fill" src="img/illustration1.png"
+                <img class="img img-fluid h-100 object-fit-md-fill object-fit-contain" src="img/illustration1.png"
                     alt="Digital Marketing and Search Engine optimization for small businesses by ZappySites.">
             </div>
 
@@ -1199,7 +1199,7 @@
             <div class="img-div">
                 <!-- <img src="/img/team.png" alt="ZappySites People"> -->
 				<div class="video-container" id="videoContainer">
-					<video id="myVideo" autoplay muted loop width="100%" height="auto">
+					<video id="myVideo" muted loop width="100%" height="auto" playsinline>
 					  <source src="/video/video-optimized.mp4" type="video/mp4">
 					  Your browser does not support the video tag.
 					</video>
@@ -1866,7 +1866,7 @@
 
                 <div class="column">
                     <div class="img-div">
-                        <img class="logo" src="/img/footer-logo.png" alt="Company Logo">
+                        <a title="Homepage" href="/"><img class="logo" src="/img/footer-logo.png" alt="Company Logo"></a>
                     </div>
                     <p class="info">
                         Supercharge your online visibility with a powerful, Search Engine Optimized website, developed and managed by experts for local businesses.
@@ -1875,18 +1875,18 @@
 
                 <div class="column">
                     <h6 class="footer-head">Company</h6>
-                    <a title="ZappySites Company" class="footer-link" href="/company">Our Company</a>
-                    <a title="ZappySites Media and Press Info" class="footer-link" href="/media">Media and Press</a>
-                    <a title="Contact ZappySites" class="footer-link" href="/contact">Contact Us</a>
-                    <a title="Frequently Asked Questions" class="footer-link" href="/faq">FAQ</a>
+                    <a title="ZappySites Company" class="footer-link" href="/company.html">Our Company</a>
+                    <a title="ZappySites Media and Press Info" class="footer-link" href="/media.html">Media and Press</a>
+                    <a title="Contact ZappySites" class="footer-link" href="/contact.html">Contact Us</a>
+                    <a title="Frequently Asked Questions" class="footer-link" href="/faq.html">FAQ</a>
                 </div>
 
                 <div class="column">
                     <h6 class="footer-head">Services</h6>
-                    <a title="Digital Marketing" class="footer-link" href="/digital-marketing">Digital Marketing</a>
-                    <a title="Website Design for Businesses" class="footer-link" href="">Website Design</a>
-                    <a title="Search Engine Optimization Agency" class="footer-link" href="">SEO</a>
-                    <a title="Lead Generation Agency for Local Businesses" class="footer-link" href="">Lead Generation</a>
+                    <a title="Digital Marketing" class="footer-link" href="/digital-marketing.html">Digital Marketing</a>
+                    <a title="Website Design for Businesses" class="footer-link" href="/websites-for-business.html">Website Design</a>
+                    <a title="Search Engine Optimization Agency" class="footer-link" href="/google-search-optimization.html">SEO</a>
+                    <a title="Lead Generation Agency for Local Businesses" class="footer-link" href="/lead-generation.html">Lead Generation</a>
                 </div>
 
                 <div class="column">
@@ -1901,7 +1901,7 @@
                     </a>
 					
 					<div class="flex">
-					<a title="Client Login" class="pill-btn-transparent mt-4" href="tel:+18328106247">
+					<a title="Client Login" class="pill-btn-transparent mt-4" href="/login.html">
 						<div class="icon-div-small">
 							<i class="fa-solid fa-user"></i>
 						</div>

@@ -40,31 +40,6 @@
 }
 
 
-.inner-page-hero-gradient.nav-hero {
-    .hero {
-        content: "";
-        background-image: url("/img/dotted-element-light.png");
-        background-repeat: no-repeat;
-        background-size: 17%;
-        position: relative;
-
-        &::after {
-            content: "";
-            background: rgb(18, 74, 205);
-            background: linear-gradient(86deg, rgb(8, 59, 179) 0%, rgba(18, 74, 205, 0.9168837535014006) 77%, rgba(8, 61, 184, 0.868) 100%);
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            z-index: -1;
-            position: absolute;
-            display: block !important;
-            background-color: none !important;
-        }
-    }
-}
-
-
 .inner-page-hero-gradient {
     .hero-bg {
         position: absolute;
@@ -80,6 +55,40 @@
     .hero {
         position: relative;
         padding: 3.5rem 0;
+        background-image: url("/img/dotted-element-light.png"), url("/img/dotted-element-light-flipped.png");
+        background-repeat: no-repeat;
+        background-size: auto 150%;
+        background-position: left top, right top;
+        animation: bgAnimation 800ms ease-in-out;
+        position: relative;
+
+        &:hover{
+            background-size: auto 175%;
+        }
+
+        &::after {
+            content: "";
+            background: rgb(1, 55, 161);
+            background: linear-gradient(86deg, rgb(1, 55, 161) 0%, rgba(1, 55, 161, 0.9168837535014006) 77%, rgba(1, 55, 161, 0.868) 100%);
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            position: absolute;
+            display: block !important;
+            background-color: none !important;
+        }
+
+        @keyframes bgAnimation {
+            0%{
+                background-size: auto 200%;
+            }
+
+            100%{
+                background-size: auto 125%;
+            }
+        }
 
         .info-div {
             width: 100% !important;
@@ -105,7 +114,7 @@
     }
 }
 
-.inner-hero {
+.inner-hero.nav-hero {
     nav {
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     }
@@ -121,10 +130,13 @@
                 height: 100%;
                 padding: 0 !important;
 
-                img {
-                    height: 100%;
-                    object-fit: cover !important;
-                    object-position: inherit !important;
+                .hero-main-img, video {
+                    width: 100%;
+                    max-height: 81vh;
+                    object-fit: cover;
+                    border-radius: 12px;
+                    object-position: center;
+                    height: 540px;
                 }
             }
 
@@ -194,13 +206,15 @@
                 padding-right: 2rem;
                 position: relative;
 
+
+
                 @media (max-width: 1200px) {
                     flex: 1;
                     width: 0%;
                     display: none;
                 }
 
-                .hero-main-img {
+                .hero-main-img, video {
                     width: 100%;
                     max-height: 81vh;
                     object-fit: contain;

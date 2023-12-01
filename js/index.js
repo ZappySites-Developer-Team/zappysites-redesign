@@ -648,29 +648,11 @@ $('.projects-slider').slick({
   nextArrow: '<i class="fa-solid fa-chevron-right right-arrow"></i>',
 });
 
-const videoSection = document.querySelector(".video-section");
-const videoDiv = document.querySelector(".video-div");
-const video = videoDiv.querySelector(".video");
-const videoBtn = document.querySelector(".play-btn");
-const playBtn = videoBtn.querySelector(".play-btn-img");
-const cancelBtn = videoBtn.querySelector(".cancel-btn");
+const video = document.getElementById("mainVideo");
+const cancelBtn = document.getElementById("closeVideo");
 
-playBtn.addEventListener("click", () => {
-  videoSection.classList.add("video-start");
-  videoDiv.classList.add("show-video");
-  videoBtn.style.backgroundColor = "red";
-  playBtn.style.display = "none";
-  cancelBtn.style.display = "block";
-  video.play();
-});
 
 cancelBtn.addEventListener("click", () => {
-  console.log("Cancel button clicked");
-  videoSection.classList.remove("video-start");
-  videoDiv.classList.remove("show-video");
-  videoBtn.style.backgroundColor = "";
-  playBtn.style.display = "block";
-  cancelBtn.style.display = "none";
   video.pause();
 });
 

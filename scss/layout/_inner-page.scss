@@ -241,7 +241,7 @@
         }
     }
 
-    span {
+    button {
         background-color: $primary;
         border-radius: 50rem;
         position: absolute;
@@ -384,6 +384,114 @@
                 text-decoration: underline !important;
             }
 
+        }
+    }
+}
+// Domain Search Results
+.domain-search-results{
+    .domain-search{
+        input{
+            padding-right: 190px;
+            @media (max-width: 576px) {
+                padding-right: 160px;
+            }
+        }
+        button{
+            @media (max-width: 576px) {
+                padding: 0 1rem;
+            }
+        }
+    }
+}
+.domain-results{
+    .result-box.positive{
+        display: block;
+        .summary{
+            background-color: $secondary;
+        }
+
+        .domain-name{
+            color: $dark;
+
+            span{
+                color: $secondary;
+            }
+        }
+
+        .negative-remarks{
+            display: none;
+        }
+
+        .price{
+            margin-bottom: 1rem;
+
+            .crossed-price{
+                font-size: 20px;
+                color: #3a3939;
+                text-decoration: line-through !important;
+                font-weight: 600;
+            }
+
+            .discounted-price{
+                color: $dark;
+                font-size: 24px;
+                padding-left: 4px;
+                font-weight: 600;
+            }
+
+            .year{
+                display: block;
+                font-size: 16px;
+            }
+        }
+    }
+
+    .result-box.negative{
+        display: block;
+        .summary{
+            background-color: $info;
+        }
+
+        .domain-name{
+            color: $light-info;
+            text-decoration: line-through !important;
+        }
+
+        .price{
+           display: none;
+        }
+
+        button{
+            display: none;
+        }
+    }
+
+    .result-box{
+        display: none;
+        padding: 2rem;
+        border: 1px solid $dark;
+        border-radius: 12px;
+        width: 50%;
+
+        @media (max-width: 992px) {
+            width: 100%;
+        }
+
+
+        .summary{
+            width: fit-content;
+            padding: 5px 9px;
+            border-radius: 6px;
+            font-weight: 500;
+            color: $white;
+            margin-bottom: 1rem;
+        }
+
+        .domain-name{
+            font-size: 26px;
+            color: $dark;
+            font-weight: 600;
+            margin-bottom: 1rem;
         }
     }
 }
