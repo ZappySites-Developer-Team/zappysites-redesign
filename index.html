@@ -1199,7 +1199,7 @@
             <div class="img-div">
                 <!-- <img src="/img/team.png" alt="ZappySites People"> -->
 				<div class="video-container" id="videoContainer">
-					<video id="myVideo" muted loop width="100%" height="auto">
+					<video id="myVideo" autoplay muted loop width="100%" height="auto">
 					  <source src="/video/video-optimized.mp4" type="video/mp4">
 					  Your browser does not support the video tag.
 					</video>
@@ -1951,8 +1951,6 @@
 
       if (isElementInViewport(videoContainer) && !video.playing) {
         video.play();
-      } else {
-        video.pause();
       }
     }
 
