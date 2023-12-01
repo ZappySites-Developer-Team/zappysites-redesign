@@ -1932,7 +1932,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	
-	<script>
+  <script>
     // Function to check if an element is in the viewport
     function isElementInViewport(el) {
       const rect = el.getBoundingClientRect();
@@ -1951,16 +1951,18 @@
 
       if (isElementInViewport(videoContainer) && !video.playing) {
         video.play();
+      } else {
+        video.pause();
       }
     }
 
-    // Attach event listener for scroll events
+    // Attach event listeners for scroll and touch events
     document.addEventListener('scroll', handleVideoPlayback);
+    document.addEventListener('touchmove', handleVideoPlayback);
 
     // Initial check on page load
     handleVideoPlayback();
   </script>
-  
 </body>
 
 </html>
