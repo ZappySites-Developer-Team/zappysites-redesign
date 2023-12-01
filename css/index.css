@@ -17111,4 +17111,99 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 
 .nomargin {
   margin-bottom: 0 !important;
+
 }
+
+video {
+      border-radius: 3rem;
+      outline: none; /* Remove default focus outline */
+    }
+
+    .video-container {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      opacity: 0;
+    }
+
+    .overlay:hover + video {
+      cursor: pointer;
+      controls: none;
+    }video {
+      border-radius: 3rem;
+      outline: none; /* Remove default focus outline */
+    }
+
+    .video-container {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      opacity: 0;
+    }
+
+    .overlay:hover + video {
+      cursor: pointer;
+      controls: none;
+    }video {
+      border-radius: 3rem;
+      outline: none; /* Remove default focus outline */
+    }
+
+    .video-container {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      opacity: 0;
+    }
+
+    .overlay:hover + video {
+      cursor: pointer;
+      controls: none;
+    }video {
+      border-radius: 3rem;
+      outline: none; /* Remove default focus outline */
+    }
+
+    .video-container {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      opacity: 0;
+    }
+
+    .overlay:hover + video {
+      cursor: pointer;
+      controls: none;
+    }
