@@ -13605,22 +13605,6 @@ nav .nav-link.active {
     padding: 1.5rem 0;
   }
 }
-.nav-hero .hero::after {
-  display: none;
-}
-@media (max-width: 1200px) {
-  .nav-hero .hero::after {
-    display: block;
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    background-color: #ffffff;
-  }
-}
 .nav-hero .hero .flex {
   display: flex;
   gap: 5rem;
