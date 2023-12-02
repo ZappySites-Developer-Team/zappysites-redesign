@@ -1957,6 +1957,7 @@
     // Attach event listeners for scroll and touch events
     document.addEventListener('scroll', handleVideoPlayback);
     document.addEventListener('touchmove', handleVideoPlayback);
+    document.addEventListener('touchstart', handleVideoPlayback);
 
     // Initial check on page load
     handleVideoPlayback();
