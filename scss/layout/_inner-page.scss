@@ -387,86 +387,92 @@
         }
     }
 }
+
 // Domain Search Results
-.domain-search-results{
-    .domain-search{
-        input{
+.domain-search-results {
+    .domain-search {
+        input {
             padding-right: 190px;
+
             @media (max-width: 576px) {
                 padding-right: 160px;
             }
         }
-        button{
+
+        button {
             @media (max-width: 576px) {
                 padding: 0 1rem;
             }
         }
     }
 }
-.domain-results{
-    .result-box.positive{
+
+.domain-results {
+    .result-box.positive {
         display: block;
-        .summary{
+
+        .summary {
             background-color: $secondary;
         }
 
-        .domain-name{
+        .domain-name {
             color: $dark;
 
-            span{
+            span {
                 color: $secondary;
             }
         }
 
-        .negative-remarks{
+        .negative-remarks {
             display: none;
         }
 
-        .price{
+        .price {
             margin-bottom: 1rem;
 
-            .crossed-price{
+            .crossed-price {
                 font-size: 20px;
                 color: #3a3939;
                 text-decoration: line-through !important;
                 font-weight: 600;
             }
 
-            .discounted-price{
+            .discounted-price {
                 color: $dark;
                 font-size: 24px;
                 padding-left: 4px;
                 font-weight: 600;
             }
 
-            .year{
+            .year {
                 display: block;
                 font-size: 16px;
             }
         }
     }
 
-    .result-box.negative{
+    .result-box.negative {
         display: block;
-        .summary{
+
+        .summary {
             background-color: $info;
         }
 
-        .domain-name{
+        .domain-name {
             color: $light-info;
             text-decoration: line-through !important;
         }
 
-        .price{
-           display: none;
+        .price {
+            display: none;
         }
 
-        button{
+        button {
             display: none;
         }
     }
 
-    .result-box{
+    .result-box {
         display: none;
         padding: 2rem;
         border: 1px solid $dark;
@@ -478,7 +484,7 @@
         }
 
 
-        .summary{
+        .summary {
             width: fit-content;
             padding: 5px 9px;
             border-radius: 6px;
@@ -487,11 +493,109 @@
             margin-bottom: 1rem;
         }
 
-        .domain-name{
+        .domain-name {
             font-size: 26px;
             color: $dark;
             font-weight: 600;
             margin-bottom: 1rem;
+        }
+    }
+}
+
+// Benefits
+.benefits {
+    .flex {
+        display: flex;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+
+        .column {
+            width: 100%;
+            padding: 2rem 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+
+            @media (max-width: 1200px) {
+                flex-direction: column;
+            }
+
+            @media (max-width: 768px) {
+                flex-direction: row;
+            }
+
+            .icon-div {
+                width: 5rem;
+                height: 5rem;
+                min-width: 5rem;
+                min-height: 5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+
+                i {
+                    font-size: 40px;
+
+                    @media (max-width: 576px) {
+                        font-size: 34px;
+                    }
+                }
+            }
+
+            .info-div {
+                @media (max-width: 1200px) {
+                    text-align: center;
+                }
+
+                @media (max-width: 768px) {
+                    text-align: start;
+                }
+
+                .heading {
+                    font-size: 32px;
+                    font-weight: 600;
+                    color: $primary;
+
+                    @media (max-width: 576px) {
+                        font-size: 26px;
+                    }
+                }
+            }
+
+            &:nth-of-type(odd) {
+                background-color: $success;
+
+                .icon-div {
+                    background-color: $primary;
+
+                    i {
+                        color: $white;
+                    }
+                }
+            }
+
+            &:nth-of-type(even) {
+                background-color: $primary;
+
+                .icon-div {
+                    background-color: $success;
+
+                    i {
+                        color: $primary;
+                    }
+                }
+
+                .info-div {
+                    color: $white;
+
+                    .heading {
+                        color: $white;
+                    }
+                }
+            }
         }
     }
 }

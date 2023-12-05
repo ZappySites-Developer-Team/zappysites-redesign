@@ -13561,7 +13561,7 @@ nav .nav-link.active {
   gap: 3rem !important;
 }
 .inner-hero.nav-hero .hero .flex .img-div {
-  width: 40% !important;
+  width: 40%;
   height: 100%;
   padding: 0 !important;
 }
@@ -13574,7 +13574,7 @@ nav .nav-link.active {
   height: 540px;
 }
 .inner-hero.nav-hero .hero .flex .info-div {
-  width: 60% !important;
+  width: 60%;
   flex: 1;
   padding-bottom: inherit !important;
 }
@@ -13582,6 +13582,12 @@ nav .nav-link.active {
   font-size: 28px;
   font-weight: 600;
   margin-bottom: 2rem;
+}
+.inner-hero.nav-hero .hero.industry-hero .img-div {
+  width: 50%;
+}
+.inner-hero.nav-hero .hero.industry-hero .info-div {
+  width: 50%;
 }
 
 .nav-hero {
@@ -15205,6 +15211,64 @@ footer .flex .column .footer-link i {
   font-weight: 400;
   margin-bottom: 1.5rem;
 }
+.about-us-light .flex .info-div .ratings-spf {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+.about-us-light .flex .info-div .ratings-spf .customers-overview {
+  height: 4rem;
+  display: flex;
+}
+.about-us-light .flex .info-div .ratings-spf .customers-overview .profiles {
+  position: relative;
+  width: 300px;
+}
+.about-us-light .flex .info-div .ratings-spf .customers-overview .profiles .profile {
+  width: 4rem;
+  height: 4rem;
+  object-fit: cover;
+  border-radius: 50%;
+  top: 0;
+  border: 4px solid #ffffff;
+}
+.about-us-light .flex .info-div .ratings-spf .customers-overview .profiles .profile-2 {
+  position: absolute;
+  left: 20%;
+}
+.about-us-light .flex .info-div .ratings-spf .customers-overview .profiles .profile-3 {
+  position: absolute;
+  left: 40%;
+}
+.about-us-light .flex .info-div .ratings-spf .customers-overview .info-div {
+  transform: translateX(-30%);
+}
+@media (max-width: 1200px) {
+  .about-us-light .flex .info-div .ratings-spf .customers-overview .info-div {
+    transform: translateX(-10%);
+  }
+}
+@media (max-width: 576px) {
+  .about-us-light .flex .info-div .ratings-spf .customers-overview .info-div {
+    transform: translateX(-12%);
+  }
+}
+.about-us-light .flex .info-div .ratings-spf .customers-overview .info-div .stat {
+  font-size: 20px;
+  font-weight: 600;
+  color: #212529;
+}
+.about-us-light .flex .info-div .ratings-spf .customers-overview .info-div .stat-info {
+  font-size: 16px;
+  font-weight: 500;
+  color: #5c5d5e;
+}
+.about-us-light .flex .info-div .ratings-spf .star-ratings .stat {
+  font-size: 20px;
+  font-weight: 600;
+  color: #212529;
+}
 .about-us-light .flex .info-div .stats {
   display: flex;
   gap: 1rem;
@@ -15771,6 +15835,94 @@ a.login:visited {
   color: #212529;
   font-weight: 600;
   margin-bottom: 1rem;
+}
+
+.benefits .flex {
+  display: flex;
+}
+@media (max-width: 768px) {
+  .benefits .flex {
+    flex-direction: column;
+  }
+}
+.benefits .flex .column {
+  width: 100%;
+  padding: 2rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+@media (max-width: 1200px) {
+  .benefits .flex .column {
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .benefits .flex .column {
+    flex-direction: row;
+  }
+}
+.benefits .flex .column .icon-div {
+  width: 5rem;
+  height: 5rem;
+  min-width: 5rem;
+  min-height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.benefits .flex .column .icon-div i {
+  font-size: 40px;
+}
+@media (max-width: 576px) {
+  .benefits .flex .column .icon-div i {
+    font-size: 34px;
+  }
+}
+@media (max-width: 1200px) {
+  .benefits .flex .column .info-div {
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .benefits .flex .column .info-div {
+    text-align: start;
+  }
+}
+.benefits .flex .column .info-div .heading {
+  font-size: 32px;
+  font-weight: 600;
+  color: #2358e5;
+}
+@media (max-width: 576px) {
+  .benefits .flex .column .info-div .heading {
+    font-size: 26px;
+  }
+}
+.benefits .flex .column:nth-of-type(odd) {
+  background-color: #c6e1fc;
+}
+.benefits .flex .column:nth-of-type(odd) .icon-div {
+  background-color: #2358e5;
+}
+.benefits .flex .column:nth-of-type(odd) .icon-div i {
+  color: #fff;
+}
+.benefits .flex .column:nth-of-type(even) {
+  background-color: #2358e5;
+}
+.benefits .flex .column:nth-of-type(even) .icon-div {
+  background-color: #c6e1fc;
+}
+.benefits .flex .column:nth-of-type(even) .icon-div i {
+  color: #2358e5;
+}
+.benefits .flex .column:nth-of-type(even) .info-div {
+  color: #fff;
+}
+.benefits .flex .column:nth-of-type(even) .info-div .heading {
+  color: #fff;
 }
 
 .lb-loader,
