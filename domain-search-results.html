@@ -132,8 +132,8 @@
                     domainname.com
                 </p>
                 <p class="price">
-                    <span class="crossed-price">$12</span>
-                    <span class="discounted-price"> $1,000 </span>
+                    <span class="crossed-price">$18.87</span>
+                    <span class="discounted-price"> $11.23 </span>
                     <span class="year">per year</span>
                 </p>
 
@@ -219,19 +219,22 @@
 
     <script>
         var isLoading = false;
-        function searchDomain(searchData) {
+
+        function searchDomain() {
             event.preventDefault();
             isLoading = true;
+            updateSpinnerVisibility();
+
+            console.log("IS LOADING: " + isLoading);
 
             var searchData = document.getElementById('searchInput').value;
 
-            if (!/\.(com|xyz|your_extension_here)$/i.test(searchData)) {
-                document.getElementById('error-info').innerHTML = 'Please include a valid domain extension (e.g., .com)';
-                isLoading = false;
-                updateSpinnerVisibility();
-                return;
-            } else {
-                document.getElementById('error-info').innerHTML = '';
+            var commonExtensions = ['.com', '.net', '.org', '.info', '.biz', '.co', '.io', '.us', '.me', '.online'];
+
+            var hasCommonExtension = commonExtensions.some(ext => searchData.endsWith(ext));
+            
+            if (!hasCommonExtension && !searchData.endsWith('.com')) {
+                searchData += '.com';
             }
 
             localStorage.setItem('searchData', searchData);
@@ -259,7 +262,6 @@
                 })
                 .catch(error => {
                     console.error('Error fetching data:', error);
-                    isLoading = false;
                 })
                 .finally(() => {
                     isLoading = false;
@@ -270,7 +272,6 @@
             elements.forEach(function (element) {
                 element.textContent = searchData; // Example: change the text content
             });
-            isLoading = false;
         }
 
         // Check if there is existing data in localStorage on page load
@@ -280,7 +281,7 @@
                 isLoading = true;
                 // If there is data, automatically trigger the domain search
                 document.getElementById('searchInput').value = searchData;
-                searchDomain(searchData);
+                searchDomain(new Event('submit'));
             }
         });
 
