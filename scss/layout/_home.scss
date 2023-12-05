@@ -130,6 +130,30 @@
                 height: 100%;
                 padding: 0 !important;
 
+                .brightness{
+                    filter: brightness(0.7);
+                }
+                .play-btn{
+                    width: 4rem;
+                    height: 4rem;
+                    background-color: $success;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    z-index: 2;
+                    transform: translate(-50%, -50%);
+                    cursor: pointer;
+
+                    i{
+                        color: $primary;
+                        font-size: 26px;
+                    }
+                }
+
                 .hero-main-img, video {
                     width: 100%;
                     max-height: 81vh;

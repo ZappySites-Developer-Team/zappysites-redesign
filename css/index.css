@@ -13150,7 +13150,7 @@ nav .nav-link.active {
   background-color: transparent;
   display: flex;
   justify-content: center;
-  margin: 0 auto;
+  margin: auto auto;
 }
 .video-modal .modal-dialog .modal-content {
   height: 100%;
@@ -13386,6 +13386,7 @@ nav .nav-link.active {
   padding-right: 1.5rem;
   background-color: transparent;
   border: 2px solid #c6e1fc;
+  width: fit-content;
 }
 .pill-btn-transparent span {
   font-size: 18px;
@@ -13564,6 +13565,28 @@ nav .nav-link.active {
   width: 40%;
   height: 100%;
   padding: 0 !important;
+}
+.inner-hero.nav-hero .hero .flex .img-div .brightness {
+  filter: brightness(0.7);
+}
+.inner-hero.nav-hero .hero .flex .img-div .play-btn {
+  width: 4rem;
+  height: 4rem;
+  background-color: #c6e1fc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.inner-hero.nav-hero .hero .flex .img-div .play-btn i {
+  color: #2358e5;
+  font-size: 26px;
 }
 .inner-hero.nav-hero .hero .flex .img-div .hero-main-img, .inner-hero.nav-hero .hero .flex .img-div video {
   width: 100%;
@@ -15505,10 +15528,11 @@ a.login:visited {
 }
 .stacked-reviews .grid .column {
   text-align: center;
-  border: 3px solid #c6e1fc;
   border-radius: 12px;
   padding: 1rem 1.5rem 2rem;
   position: relative;
+  background-color: #fff;
+  box-shadow: rgba(227, 227, 230, 0.2) 0px 7px 29px 0px;
 }
 .stacked-reviews .grid .column::before {
   content: "";
@@ -15519,7 +15543,7 @@ a.login:visited {
   height: 23%;
   background-color: #c6e1fc;
   border-radius: 12px 12px 0 0;
-  z-index: -1;
+  z-index: 1;
 }
 .stacked-reviews .grid .column .img-div {
   width: 6rem;
@@ -15527,12 +15551,15 @@ a.login:visited {
   margin: 0 auto;
   margin-top: 2rem;
   margin-bottom: 1rem;
+  z-index: 2;
 }
 .stacked-reviews .grid .column .img-div img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  border: 3px solid #2358e5;
+  border: 4px solid #2358e5;
+  z-index: 2;
+  position: relative;
 }
 .stacked-reviews .grid .column .info-div {
   margin-top: 0rem;
@@ -15541,12 +15568,12 @@ a.login:visited {
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 0.5rem;
-  color: #fff;
+  color: #212529;
 }
 .stacked-reviews .grid .column .info-div .info {
   font-size: 18px;
   font-weight: 400;
-  color: #fff;
+  color: #212529;
   margin-bottom: 1rem;
 }
 .stacked-reviews .grid .column .info-div .info i {
@@ -15556,7 +15583,7 @@ a.login:visited {
 .stacked-reviews .grid .column .info-div .industry {
   font-size: 18px;
   font-weight: 500;
-  color: #fff;
+  color: #2358e5;
 }
 .stacked-reviews .grid .column .info-div .stars {
   margin-top: 0.5rem;

@@ -62,7 +62,8 @@
                         </li>
 
                         <li class="nav-item">
-                            <a title="Website Design and Internet Marketing" class="nav-link" href="/website-features.html">Services</a>
+                            <a title="Website Design and Internet Marketing" class="nav-link"
+                                href="/website-features.html">Services</a>
                         </li>
 
                         <li class="nav-item">
@@ -91,16 +92,20 @@
         <div class="hero">
             <div class="container">
                 <div class="flex">
-                    <div class="img-div">
-                        <video controls poster="/img/employees-high-fiving.jpg">
-                            <source src="/img/zappysites2.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
+                    <div class="img-div position-relative">
+                        <div class="play-btn">
+                            <button class="btn" data-bs-toggle="modal" data-bs-target="#videoModal">
+                                <i class="fa-solid fa-play"></i>
+                            </button>
+                        </div>
+
+                        <img style="transform: scaleX(-1);" class="hero-main-img brightness" src="/img/presentation.JPG"
+                            alt="hero bg">
                     </div>
 
                     <div class="info-div">
                         <h1 class="first-heading">
-                            Switching to ZappySites is Easy<span class="text-primary">.</span>
+                            Grow your business by switching to ZappySites.
                         </h1>
                         <p class="hero-info mb-4">
                             Included Free with ZappySites. Let our experts hold your hand while transferring or pointing
@@ -351,7 +356,7 @@
                 </p>
 
                 <div class="d-flex mt-4">
-                                     <a class="btn btn-light rounded-pill px-5 fs-20 mx-auto" title="Pricing" href="/pricing.html">
+                    <a class="btn btn-light rounded-pill px-5 fs-20 mx-auto" title="Pricing" href="/pricing.html">
                         Get My Website
                     </a>
                 </div>
@@ -582,18 +587,7 @@
                 </div>
 
                 <div class="img-div">
-                    <img class="main-img" src="/img/happy-man.jpg" alt="Happy Man">
-                    <div class="ratings-spf">
-                        <div class="customers-overview">
-                            <div class="star-ratings d-flex">
-                                <p class="stars">
-                                    <i class="fa-solid fa-star fs-20"></i>
-                                </p>
-                                <p class="stat ms-2 fw-500"><span class="fw-600 fs-18 pe-1">5.0 </span>| 100+ Reviews
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                    <img class="main-img" src="/img/happy-team.jpg" alt="Laptop Mockup">
                 </div>
             </div>
         </div>
@@ -760,7 +754,7 @@
 
                     <div class="buttons-flex">
                         <div>
-                           <a class="pill-btn " title="Website Packages" href="/pricing.html">
+                            <a class="pill-btn " title="Website Packages" href="/pricing.html">
                                 <div class="icon-div-small">
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </div>
@@ -800,7 +794,7 @@
 
                     <div class="buttons-flex mt-4">
                         <div>
-                                                       <a title="Website Packages" class="pill-btn" href="/pricing.html">
+                            <a title="Website Packages" class="pill-btn" href="/pricing.html">
                                 <div class="icon-div-small">
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </div>
@@ -831,7 +825,7 @@
                         <p class="info">
                             More calls from a ZappySites website means more revenue so you can expand your business.
                         </p>
-                       <a title="Website Packages" class="link" href="/pricing.html">Start Now</a>
+                        <a title="Website Packages" class="link" href="/pricing.html">Start Now</a>
                     </div>
 
                     <div class="item">
@@ -844,7 +838,7 @@
                         <p class="info">
                             Reach more customers by increasing your company's online visibility with ZappySites.
                         </p>
-                       <a title="Website Packages" class="link" href="/pricing.html">Start Now</a>
+                        <a title="Website Packages" class="link" href="/pricing.html">Start Now</a>
                     </div>
                 </div>
             </div>
@@ -861,7 +855,7 @@
                         Online reviews are your word-of-mouth digital marketing strategy. Reach more customers with
                         ZappySites.
                     </p>
-                   <a title="Website Packages" class="link" href="/pricing.html">Start Now</a>
+                    <a title="Website Packages" class="link" href="/pricing.html">Start Now</a>
                 </div>
 
                 <div class="item">
@@ -875,7 +869,7 @@
                         Search Engine Optimized websites created by ZappySites help you reach more customers and
                         increase website visitors.
                     </p>
-                   <a title="Website Packages" class="link" href="/pricing.html">Start Now</a>
+                    <a title="Website Packages" class="link" href="/pricing.html">Start Now</a>
                 </div>
 
                 <div class="item">
@@ -889,7 +883,7 @@
                         Generate leads and boost your business growth by reaching potential customers with a ZappySites
                         website.
                     </p>
-                   <a title="Website Packages" class="link" href="/pricing.html">Start Now</a>
+                    <a title="Website Packages" class="link" href="/pricing.html">Start Now</a>
                 </div>
 
                 <div class="item">
@@ -903,7 +897,7 @@
                         Digital Marketing to grow your business starts with a professional website designed to reach
                         more customers.
                     </p>
-                   <a title="Website Packages" class="link" href="/pricing.html">Start Now</a>
+                    <a title="Website Packages" class="link" href="/pricing.html">Start Now</a>
                 </div>
             </div>
         </div>
@@ -925,7 +919,7 @@
 
                     <div class="mt-5 buttons-flex">
                         <div class="button">
-                           <a class="pill-btn" title="Website Pricing" href="/pricing.html">
+                            <a class="pill-btn" title="Website Pricing" href="/pricing.html">
                                 <div class="icon-div">
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </div>
@@ -1069,27 +1063,34 @@
 
                 <div class="column">
                     <div class="img-div">
-                        <a title="Homepage" href="/"><img class="logo" src="/img/footer-logo.png" alt="Company Logo"></a>
+                        <a title="Homepage" href="/"><img class="logo" src="/img/footer-logo.png"
+                                alt="Company Logo"></a>
                     </div>
                     <p class="info">
-                        Supercharge your online visibility with a powerful, Search Engine Optimized website, developed and managed by experts for local businesses.
+                        Supercharge your online visibility with a powerful, Search Engine Optimized website, developed
+                        and managed by experts for local businesses.
                     </p>
                 </div>
 
                 <div class="column">
                     <h6 class="footer-head">Company</h6>
                     <a title="ZappySites Company" class="footer-link" href="/company.html">Our Company</a>
-                    <a title="ZappySites Media and Press Info" class="footer-link" href="/media.html">Media and Press</a>
+                    <a title="ZappySites Media and Press Info" class="footer-link" href="/media.html">Media and
+                        Press</a>
                     <a title="Contact ZappySites" class="footer-link" href="/contact.html">Contact Us</a>
                     <a title="Frequently Asked Questions" class="footer-link" href="/faq.html">FAQ</a>
                 </div>
 
                 <div class="column">
                     <h6 class="footer-head">Services</h6>
-                    <a title="Digital Marketing" class="footer-link" href="/digital-marketing.html">Digital Marketing</a>
-                    <a title="Website Design for Businesses" class="footer-link" href="/websites-for-business.html">Website Design</a>
-                    <a title="Search Engine Optimization Agency" class="footer-link" href="/google-search-optimization.html">SEO</a>
-                    <a title="Lead Generation Agency for Local Businesses" class="footer-link" href="/lead-generation.html">Lead Generation</a>
+                    <a title="Digital Marketing" class="footer-link" href="/digital-marketing.html">Digital
+                        Marketing</a>
+                    <a title="Website Design for Businesses" class="footer-link"
+                        href="/websites-for-business.html">Website Design</a>
+                    <a title="Search Engine Optimization Agency" class="footer-link"
+                        href="/google-search-optimization.html">SEO</a>
+                    <a title="Lead Generation Agency for Local Businesses" class="footer-link"
+                        href="/lead-generation.html">Lead Generation</a>
                 </div>
 
                 <div class="column">
@@ -1102,24 +1103,26 @@
                         <i class="fa-regular fa-envelope"></i>
                         hello@zappysites.com
                     </a>
-					
-					<div class="flex">
-					<a title="Client Login" class="pill-btn-transparent mt-4" href="/login.html">
-						<div class="icon-div-small">
-							<i class="fa-solid fa-user"></i>
-						</div>
-						<span>Client Login</span>
-					</a>
-					</div>
-					
+
+                    <div class="flex">
+                        <a title="Client Login" class="pill-btn-transparent mt-4" href="/login.html">
+                            <div class="icon-div-small">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <span>Client Login</span>
+                        </a>
+                    </div>
+
                 </div>
             </div>
             <p class="text-center text-white mt-5 fs-18 border-top border-1 border-success pt-4">
                 &copy; 2023 ZappySites, LLC. All Rights Reserved.
             </p>
             <p class="text-center text-white mt-5 fs-18 pt-4">
-                <a title="Terms of Service" class="text-white" href="/legal/terms-of-use">Terms</a> &nbsp; &middot; &nbsp; 
-                <a title="Privacy Policy" class="text-white" href="/legal/privacy-policy">Privacy</a> &nbsp; &middot; &nbsp; 
+                <a title="Terms of Service" class="text-white" href="/legal/terms-of-use">Terms</a> &nbsp; &middot;
+                &nbsp;
+                <a title="Privacy Policy" class="text-white" href="/legal/privacy-policy">Privacy</a> &nbsp; &middot;
+                &nbsp;
                 <a title="Disclaimer" class="text-white" href="/legal/disclaimer">Disclaimer</a>
             </p>
         </div>
