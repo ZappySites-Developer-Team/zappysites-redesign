@@ -13512,6 +13512,11 @@ nav .nav-link.active {
 .inner-page-hero-gradient .hero:hover {
   background-size: auto 175%;
 }
+@media (max-width: 1200px) {
+  .inner-page-hero-gradient .hero {
+    background-image: none;
+  }
+}
 .inner-page-hero-gradient .hero::after {
   content: "";
   background: rgb(1, 55, 161);
@@ -15926,6 +15931,9 @@ a.login:visited {
   .benefits .flex .column .info-div .heading {
     font-size: 26px;
   }
+}
+.benefits .flex .column .info-div .info {
+  text-transform: capitalize;
 }
 .benefits .flex .column:nth-of-type(odd) {
   background-color: #c6e1fc;

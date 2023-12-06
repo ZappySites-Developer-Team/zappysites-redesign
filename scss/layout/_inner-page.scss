@@ -567,6 +567,10 @@
                         font-size: 26px;
                     }
                 }
+
+                .info{
+                    text-transform: capitalize;
+                }
             }
 
             &:nth-of-type(odd) {

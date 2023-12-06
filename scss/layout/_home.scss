@@ -66,6 +66,10 @@
             background-size: auto 175%;
         }
 
+        @media (max-width: 1200px) {
+            background-image: none;
+        }
+
         &::after {
             content: "";
             background: rgb(1, 55, 161);
