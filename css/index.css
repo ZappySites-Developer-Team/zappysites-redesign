@@ -13387,6 +13387,7 @@ nav .nav-link.active {
   background-color: transparent;
   border: 2px solid #c6e1fc;
   width: fit-content;
+  cursor: pointer;
 }
 .pill-btn-transparent span {
   font-size: 18px;
