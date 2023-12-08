@@ -15961,6 +15961,22 @@ a.login:visited {
   color: #fff;
 }
 
+.industries-navigations {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+@media (max-width: 992px) {
+  .industries-navigations {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 576px) {
+  .industries-navigations {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 .lb-loader,
 .lightbox {
   text-align: center;
