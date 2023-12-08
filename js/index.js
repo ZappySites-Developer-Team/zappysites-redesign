@@ -659,3 +659,24 @@ cancelBtn.addEventListener("click", () => {
 window.addEventListener('resize', function () {
   document.querySelector('.projects-slider').slick.refresh();
 });
+
+$(document).ready(function() {
+  // Intercept all clicks on anchor tags
+  $('a').click(function(e) {
+    e.preventDefault(); // Prevent default link behavior
+
+    // Get the href attribute of the clicked link
+    var pageUrl = $(this).attr('href');
+
+    // Load the content of the page using AJAX
+    $.ajax({
+      url: pageUrl,
+      success: function(data) {
+        // Replace the content of the current page with the loaded content
+        $('body').html(data);
+        // Update the browser history to reflect the new page
+        history.pushState(null, null, pageUrl);
+      }
+    });
+  });
+});
