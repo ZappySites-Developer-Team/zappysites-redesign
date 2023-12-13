@@ -650,11 +650,17 @@ $('.projects-slider').slick({
 
 const video = document.getElementById("mainVideo");
 const cancelBtn = document.getElementById("closeVideo");
-
+const modal = document.getElementById("videoModal"); 
 
 cancelBtn.addEventListener("click", () => {
   video.pause();
 });
+
+function playVideo() {
+  video.play();
+}
+
+modal.addEventListener("shown.bs.modal", playVideo);
 
 window.addEventListener('resize', function () {
   document.querySelector('.projects-slider').slick.refresh();
