@@ -662,6 +662,10 @@ function playVideo() {
 
 modal.addEventListener("shown.bs.modal", playVideo);
 
+modal.addEventListener("hidden.bs.modal", () => {
+  video.pause();
+});
+
 window.addEventListener('resize', function () {
   document.querySelector('.projects-slider').slick.refresh();
 });
